@@ -1,10 +1,10 @@
 {
-  "name": "sierra-library-react",
+  "name": "lndev-react-ui",
   "version": "1.0.0",
-  "description": "Sierra Library Based React UI Library Starter Kit",
+  "description": "Minimal UI strater kit",
   "author": "Luis Nesi",
   "license": "MIT",
-  "repository": "git@github.com:lnesi/sierra-library-react.git",
+  "repository": "git@github.com:lnesi/lndev-react-ui.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -70,7 +70,6 @@
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
     "sass-loader": "^8.0.0",
-    "sierra-library": "^3.5.0",
     "storybook": "^5.1.11",
     "webpack": "^4.41.2"
   },

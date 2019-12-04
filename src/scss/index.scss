@@ -1,4 +1,16 @@
-@import 'base/variables';
-@import '~sierra-library/lib/index';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import 'utils/reset';
 
-@import 'base/elements';
+@import 'base/variables';
+
+@import 'utils/defaults';
+
+@import 'base/headings';
+
+@import 'utils/breakpoints';
+
+@import 'base/grid';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}

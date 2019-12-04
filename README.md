@@ -1,15 +1,15 @@
-# sierra-library-react
+# lndev-react-ui
 
-[https://lnesi.github.io/sierra-library-react](https://lnesi.github.io/sierra-library-react)
+[https://lnesi.github.io/lndev-react-ui](https://lnesi.github.io/lndev-react-ui)
 
 > Sierra Library Based React UI Library Starter Kit
 
-[![NPM](https://img.shields.io/npm/v/sierra-library-react.svg)](https://www.npmjs.com/package/sierra-library-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/lndev-react-ui.svg)](https://www.npmjs.com/package/lndev-react-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save sierra-library-react
+npm install --save lndev-react-ui
 ```
 
 ## Usage
@@ -17,11 +17,11 @@ npm install --save sierra-library-react
 ```jsx
 import React, { Component } from 'react';
 
-import MyComponent from 'sierra-library-react';
+import { Button } from 'lndev-react-ui';
 
 class Example extends Component {
   render() {
-    return <MyComponent />;
+    return <Button />;
   }
 }
 ```
