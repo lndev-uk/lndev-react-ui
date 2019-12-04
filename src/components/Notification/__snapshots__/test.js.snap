@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification matches snapshot info 1`] = `
+<div>
+  <div
+    class="notification notification--info"
+  >
+    <p>
+      This is a test
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Notification matches snapshot info 2`] = `
+<div>
+  <div
+    class="notification notification--warning"
+  >
+    <p>
+      This is a test
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Notification matches snapshot info 3`] = `
+<div>
+  <div
+    class="notification notification--error"
+  >
+    <p>
+      This is a test
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Notification matches snapshot success 1`] = `
+<div>
+  <div
+    class="notification notification--success"
+  >
+    <p>
+      This is a test
+    </p>
+  </div>
+</div>
+`;

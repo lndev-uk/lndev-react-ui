@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge matches snapshot dark 1`] = `
+<div>
+  <div
+    class="badge badge--dark "
+  >
+    test label
+  </div>
+</div>
+`;
+
+exports[`Badge matches snapshot error 1`] = `
+<div>
+  <div
+    class="badge badge--error "
+  >
+    test label
+  </div>
+</div>
+`;
+
+exports[`Badge matches snapshot secondary 1`] = `
+<div>
+  <div
+    class="badge badge--secondary "
+  >
+    test label
+  </div>
+</div>
+`;
+
+exports[`Badge matches snapshot success 1`] = `
+<div>
+  <div
+    class="badge badge--primary "
+  >
+    test label
+  </div>
+</div>
+`;
+
+exports[`Badge matches snapshot success 2`] = `
+<div>
+  <div
+    class="badge badge--success "
+  >
+    test label
+  </div>
+</div>
+`;
+
+exports[`Badge matches snapshot warning 1`] = `
+<div>
+  <div
+    class="badge badge--warning "
+  >
+    test label
+  </div>
+</div>
+`;

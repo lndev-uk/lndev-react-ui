@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button matches snapshot green 1`] = `
+<div>
+  <button
+    class="button  button--green  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot htmlType submit 1`] = `
+<div>
+  <button
+    type="submit"
+    class="button  button--transparent  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot outlined 1`] = `
+<div>
+  <button
+    class="button  button--outlined  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot red 1`] = `
+<div>
+  <button
+    class="button  button--red  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot secondary 1`] = `
+<div>
+  <button
+    class="button  button--secondary  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot success 1`] = `
+<div>
+  <button
+    class="button  button--primary  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button matches snapshot transparent 1`] = `
+<div>
+  <button
+    class="button  button--transparent  "
+  >
+    test label
+  </button>
+</div>
+`;

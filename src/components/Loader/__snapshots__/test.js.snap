@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader matches snapshot for spinner 1`] = `
+<div>
+  <div
+    class="loadingSpinner"
+  >
+    <span
+      class="loadingSpinner-inner"
+    />
+    <span
+      class="loadingSpinner-inner"
+    />
+    <span
+      class="loadingSpinner-inner"
+    />
+    <span
+      class="loadingSpinner-inner"
+    />
+  </div>
+</div>
+`;
+
+exports[`Loader matches snapshot loading = false 1`] = `<div />`;
+
+exports[`Loader matches snapshot loading = true 1`] = `
+<div>
+  <div
+    class="loadingBar"
+  />
+</div>
+`;
+
+exports[`bar 1`] = `
+<div>
+  <div
+    class="loadingBar"
+  />
+</div>
+`;

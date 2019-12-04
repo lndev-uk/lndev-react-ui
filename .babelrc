@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "babel-preset-flow",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "stage-0",
+    "react"
+  ]
+}
