@@ -15,13 +15,15 @@
   "scripts": {
     "test": "npm run lndev && cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "npm run lndev && react-scripts test --env=jsdom",
-    "build": "npm run lndev && rollup -c && cp -r ./src/scss ./dist",
+    "build": "npm run lndev && rollup -c && cp -r ./src/scss ./dist && npm run scss:compile",
     "start": "npm run lndev && rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "npm run lndev && npm run build:storybook",
     "deploy": "gh-pages -d ./build",
     "storybook": "npm run lndev && start-storybook -p 9009",
     "build:storybook": "npm run lndev && build-storybook -o ./build/",
+    "build:css": "npm run lndev && npm run scss:compile",
+    "scss:compile": "node-sass ./src/scss/index.scss ./dist/css/style.min.css --output-style compressed --source-map true",
     "lndev": "node LNDev.js"
   },
   "peerDependencies": {
