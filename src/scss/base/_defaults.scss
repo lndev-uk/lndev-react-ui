@@ -36,3 +36,9 @@ li {
   margin-bottom: $size-xs;
   margin-left: $font-size-xl;
 }
+
+small {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xs;
+}

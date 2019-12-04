@@ -1,5 +1,4 @@
 // SIZES
-
 $size-xs: 8px !default;
 $size-sm: 12px !default;
 $size-md: 16px !default;
@@ -28,8 +27,30 @@ $breakpoint-md: 768px !default;
 $breakpoint-lg: 1024px !default;
 $breakpoint-xl: 1280px !default;
 
-//Grid
+// GRID
 $grid-columns: 12 !default;
+
+// COLORS
+$color-black: #000000 !default;
+$color-white: #ffffff !default;
+$color-yellow: #fbf531 !default;
+
+$bg-color-default: #eceff1 !default;
+$fg-color-default: #272727 !default;
+$bg-color-primary: #03a9f4 !default;
+$fg-color-primary: $color-white !default;
+$bg-color-secondary: #e91e63 !default;
+$fg-color-secondary: $color-white !default;
+$bg-color-dark: #18232f !default;
+$fg-color-dark: $color-white !default;
+$bg-color-info: #5bc0de !default;
+$fg-color-info: $color-white !default;
+$bg-color-success: #4caf50 !default;
+$fg-color-success: $color-white !default;
+$bg-color-warning: #f0ad4e !default;
+$fg-color-warning: $color-white !default;
+$bg-color-error: #e73c3c !default;
+$fg-color-error: $color-white !default;
 
 :export {
   sizexs: $size-xs;
@@ -55,4 +76,24 @@ $grid-columns: 12 !default;
   breakpointmd: $breakpoint-md;
   breakpointlg: $breakpoint-lg;
   breakpointxl: $breakpoint-xl;
+
+  colorWhite: $color-white;
+  colorBlack: $color-black;
+  colorYellow: $color-yellow;
+  bgColorDefault: $bg-color-default;
+  fgColorDefault: $fg-color-default;
+  bgColorPrimary: $bg-color-primary;
+  fgColorPrimary: $fg-color-primary;
+  bgColorSecondary: $bg-color-secondary;
+  fgColorSecondary: $fg-color-secondary;
+  bgColorDark: $bg-color-dark;
+  fgColorDark: $fg-color-dark;
+  bgColorInfo: $bg-color-info;
+  fgColorInfo: $fg-color-info;
+  bgColorSuccess: $bg-color-success;
+  fgColorSuccess: $fg-color-success;
+  bgColorWarning: $bg-color-warning;
+  fgColorWarning: $fg-color-warning;
+  bgColorError: $bg-color-error;
+  fgColorError: $fg-color-error;
 }

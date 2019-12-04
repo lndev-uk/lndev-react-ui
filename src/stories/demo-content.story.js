@@ -29,11 +29,11 @@ export const basicHTMLElements = () => (
       <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Sed
       dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.{' '}
       <span className="text-error">{'<b>'}</span>
-      <b>Fusce nec tellus sed augue semper porta</b>. Aenean quam. In
-      scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.
-      Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
-      aliquet. Mauris ipsum.{' '}
+      <b className="bg-yellow">Fusce nec tellus sed augue semper porta</b>.
+      Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
+      tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+      risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis
+      ligula lacinia aliquet. Mauris ipsum.{' '}
     </p>
     <h3>
       <span className="text-error">{'<h3>'}</span>Lorem ipsum dolor sit amet
