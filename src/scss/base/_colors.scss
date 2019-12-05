@@ -5,3 +5,12 @@
     }
   }
 }
+
+.border {
+  border: 1px solid map-get(map-get($variant-color-map, 'default'), 'color');
+  @each $type, $color in $color-map {
+    &-#{$type} {
+      border: 1px solid $color;
+    }
+  }
+}

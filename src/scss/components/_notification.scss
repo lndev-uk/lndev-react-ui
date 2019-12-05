@@ -1,0 +1,14 @@
+.notification {
+  padding: $size-md;
+  margin-bottom: $size-md;
+  display: inline-block;
+  width: 100%;
+  border-radius: $size-xs/2;
+  @each $type, $map in $variant-color-map {
+    &--#{$type} {
+      background-color: rgba(map-get($map, 'background-color'), 0.5);
+      color: $color-black;
+      border: 1px solid map-get($map, 'background-color');
+    }
+  }
+}

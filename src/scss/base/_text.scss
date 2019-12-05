@@ -44,6 +44,14 @@
   text-align: center;
 }
 
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
 .text {
   @each $type, $color-map in $variant-color-map {
     &-#{$type} {
