@@ -1,0 +1,40 @@
+@import 'base/variables';
+@import 'base/maps';
+
+:export {
+  @each $type, $size in $font-size-map {
+    font-size-#{$type}: $size;
+  }
+
+  @each $type, $map in $size-map {
+    size-#{$type}: map-get($map, 'spacing');
+  }
+
+  @each $type, $size in $line-height-map {
+    line-height-#{$type}: $size;
+  }
+
+  @each $type, $size in $breakpoint-map {
+    breakpoint-#{$type}: $size;
+  }
+
+  // colorWhite: $color-white;
+  // colorBlack: $color-black;
+  // colorYellow: $color-yellow;
+  // bgColorDefault: $bg-color-default;
+  // fgColorDefault: $fg-color-default;
+  // bgColorPrimary: $bg-color-primary;
+  // fgColorPrimary: $fg-color-primary;
+  // bgColorSecondary: $bg-color-secondary;
+  // fgColorSecondary: $fg-color-secondary;
+  // bgColorDark: $bg-color-dark;
+  // fgColorDark: $fg-color-dark;
+  // bgColorInfo: $bg-color-info;
+  // fgColorInfo: $fg-color-info;
+  // bgColorSuccess: $bg-color-success;
+  // fgColorSuccess: $fg-color-success;
+  // bgColorWarning: $bg-color-warning;
+  // fgColorWarning: $fg-color-warning;
+  // bgColorError: $bg-color-error;
+  // fgColorError: $fg-color-error;
+}

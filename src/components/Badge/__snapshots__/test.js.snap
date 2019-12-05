@@ -1,61 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge matches snapshot dark 1`] = `
+exports[`Badge Sizes matches snapshot size: lg 1`] = `
 <div>
-  <div
+  <span
+    class="badge badge--default badge--lg"
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Sizes matches snapshot size: md 1`] = `
+<div>
+  <span
+    class="badge badge--default badge--md"
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Sizes matches snapshot size: sm 1`] = `
+<div>
+  <span
+    class="badge badge--default badge--sm"
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Sizes matches snapshot size: xl 1`] = `
+<div>
+  <span
+    class="badge badge--default badge--xl"
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Sizes matches snapshot size: xs 1`] = `
+<div>
+  <span
+    class="badge badge--default badge--xs"
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Variants matches snapshot variant: dark 1`] = `
+<div>
+  <span
     class="badge badge--dark "
   >
     test label
-  </div>
+  </span>
 </div>
 `;
 
-exports[`Badge matches snapshot error 1`] = `
+exports[`Badge Variants matches snapshot variant: default 1`] = `
 <div>
-  <div
+  <span
+    class="badge badge--default "
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Variants matches snapshot variant: error 1`] = `
+<div>
+  <span
     class="badge badge--error "
   >
     test label
-  </div>
+  </span>
 </div>
 `;
 
-exports[`Badge matches snapshot secondary 1`] = `
+exports[`Badge Variants matches snapshot variant: info 1`] = `
 <div>
-  <div
-    class="badge badge--secondary "
+  <span
+    class="badge badge--info "
   >
     test label
-  </div>
+  </span>
 </div>
 `;
 
-exports[`Badge matches snapshot success 1`] = `
+exports[`Badge Variants matches snapshot variant: primary 1`] = `
 <div>
-  <div
+  <span
     class="badge badge--primary "
   >
     test label
-  </div>
+  </span>
 </div>
 `;
 
-exports[`Badge matches snapshot success 2`] = `
+exports[`Badge Variants matches snapshot variant: secondary 1`] = `
 <div>
-  <div
+  <span
+    class="badge badge--secondary "
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Variants matches snapshot variant: success 1`] = `
+<div>
+  <span
     class="badge badge--success "
   >
     test label
-  </div>
+  </span>
 </div>
 `;
 
-exports[`Badge matches snapshot warning 1`] = `
+exports[`Badge Variants matches snapshot variant: warning 1`] = `
 <div>
-  <div
+  <span
     class="badge badge--warning "
   >
     test label
-  </div>
+  </span>
 </div>
 `;

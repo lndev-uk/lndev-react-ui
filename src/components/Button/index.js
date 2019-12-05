@@ -1,32 +1,24 @@
 //@flow
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Size, SizeList, Variant, VariantList } from '../../scss/';
 
-type ButtonType =
-  | 'primary'
-  | 'secondary'
-  | 'green'
-  | 'red'
-  | 'outlined'
-  | 'transparent';
-
-type ButtonSize = 'big' | 'small';
 type HtmlButtonType = 'button' | 'submit' | 'reset';
 
 export type ButtonProps = {
   mobileFull: Boolean,
   label: String,
-  size: ButtonSize,
-  type: ButtonType,
-  htmlType: HtmlButtonType,
+  size: Size,
+  variant: Variant,
+  type: HtmlButtonType,
   name: String,
   disabled: Boolean
 };
 
 export default function Button(props: ButtonProps): React.ReactNode {
-  const { type, label, size, mobileFull, htmlType, name, disabled } = props;
+  const { variant, label, size, mobileFull, htmlType, name, disabled } = props;
   const sizeClassName = size ? 'button--' + size : '';
-  const typeClassName = type ? 'button--' + type : '';
+  const variantClassName = 'button--' + variant;
   const mobileFullClassName = mobileFull ? 'button--mobileFull' : '';
   const nameAttr = name ? { name } : {};
   const disabledAttr = disabled ? { disabled: 'disabled' } : {};
@@ -35,7 +27,7 @@ export default function Button(props: ButtonProps): React.ReactNode {
       type={htmlType}
       {...nameAttr}
       {...disabledAttr}
-      className={`button  ${typeClassName} ${sizeClassName} ${mobileFullClassName}`}
+      className={`button  ${variantClassName} ${sizeClassName} ${mobileFullClassName}`}
     >
       {label}
     </button>
@@ -43,21 +35,15 @@ export default function Button(props: ButtonProps): React.ReactNode {
 }
 
 Button.defaultProps = {
+  variant: 'default',
   disabled: false
 };
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
   mobileFull: PropTypes.bool,
-  size: PropTypes.oneOf(['big', 'small']),
-  type: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'green',
-    'red',
-    'outlined',
-    'transparent'
-  ]),
+  size: PropTypes.oneOf(SizeList),
+  variant: PropTypes.oneOf(VariantList),
   htmlType: PropTypes.oneOf(['button', 'submit', 'reset']),
   name: PropTypes.string,
   disabled: PropTypes.bool

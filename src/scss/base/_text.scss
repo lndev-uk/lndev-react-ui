@@ -24,6 +24,10 @@
   text-decoration: underline;
 }
 
+.text-nocase {
+  text-transform: none;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -38,4 +42,12 @@
 
 .text-center {
   text-align: center;
+}
+
+.text {
+  @each $type, $color-map in $variant-color-map {
+    &-#{$type} {
+      color: map-get($color-map, 'foreground-color');
+    }
+  }
 }

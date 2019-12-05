@@ -7,26 +7,11 @@
 $grid-gutter-width: $size-xs;
 
 $grid-breakpoints: (
-  xs: #{$breakpoint-xs -
-    (
-      2 * $size-xs
-    )},
-  sm: #{$breakpoint-sm -
-    (
-      2 * $size-sm
-    )},
-  md: #{$breakpoint-md -
-    (
-      2 * $size-md
-    )},
-  lg: #{$breakpoint-lg -
-    (
-      2 * $size-lg
-    )},
-  xl: #{$breakpoint-xl -
-    (
-      2 * $size-xl
-    )}
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
 ) !default;
 
 $container-max-widths: (

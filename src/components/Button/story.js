@@ -1,42 +1,32 @@
 import React from 'react';
 import Button from '.';
+import { VariantList, SizeList } from '../../scss';
 
 export default { title: 'Button' };
 
-export const Types = () => (
-  <div>
-    <div>
-      <Button type="primary" label="Primary" />
-    </div>
-    <div>
-      <Button type="secondary" label="Secondary" />
-    </div>
-    <div>
-      <Button type="green" label="green" />
-    </div>
-    <div>
-      <Button type="red" label="red" />
-    </div>
-    <div>
-      <Button type="outlined" label="outlined" />
-    </div>
-    <div>
-      <Button type="transparent" label="transparent" />
-    </div>
+export const Variants = () => (
+  <div className="container">
+    <h1>Button Variants:</h1>
+    {VariantList.map(variant => {
+      return (
+        <p key={variant}>
+          <Button variant={variant} label={variant} />
+        </p>
+      );
+    })}
   </div>
 );
 
 export const Sizes = () => (
-  <div>
-    <div>
-      <Button size="small" label="Small" />
-    </div>
-    <div>
-      <Button label="Default" />
-    </div>
-    <div>
-      <Button size="big" label="Big" />
-    </div>
+  <div className="container">
+    <h1>Button Sizes:</h1>
+    {SizeList.map(size => {
+      return (
+        <p key={size}>
+          <Button size={size} label={size} />
+        </p>
+      );
+    })}
   </div>
 );
 

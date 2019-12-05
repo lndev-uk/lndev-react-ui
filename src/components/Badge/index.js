@@ -1,43 +1,34 @@
 //@flow
 import React from 'react';
 import PropTypes from 'prop-types';
-
-type BadgeType =
-  | 'primary'
-  | 'secondary'
-  | 'dark'
-  | 'success'
-  | 'warning'
-  | 'error';
-
-type BadgeSize = 'big' | 'small';
+import { Size, SizeList, Variant, VariantList } from '../../scss/';
 
 export type BadgeProps = {
   label: String,
-  size: BadgeSize,
-  type: BadgeType
+  size: Size,
+  variant: Variant
 };
 
 export function Badge(props: BadgeProps): React.ReactNode {
-  const { size, type, label } = props;
+  const { size, variant, label } = props;
   const sizeClassName = size ? 'badge--' + size : '';
-  const typeClassName = type ? 'badge--' + type : '';
+  const variantClassName = 'badge--' + variant;
+
   return (
-    <div className={`badge ${typeClassName} ${sizeClassName}`}>{label}</div>
+    <span className={`badge ${variantClassName} ${sizeClassName}`}>
+      {label}
+    </span>
   );
 }
 
+Badge.defaultProps = {
+  variant: 'default'
+};
+
 Badge.propTypes = {
   label: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['big', 'small']),
-  type: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'dark',
-    'success',
-    'warning',
-    'error'
-  ])
+  size: PropTypes.oneOf(SizeList),
+  variant: PropTypes.oneOf(VariantList)
 };
 
 export default Badge;

@@ -1,17 +1,23 @@
 @import 'utils/reset';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 @import 'base/variables';
+@import 'base/maps';
+
+@import 'utils/breakpoints';
+@import 'base/grid';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+body,
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}
 
 @import 'base/defaults';
 
 @import 'base/headings';
 @import 'base/colors';
 
-@import 'utils/breakpoints';
-
-@import 'base/grid';
+@import 'components/badge';
+@import 'components/button';

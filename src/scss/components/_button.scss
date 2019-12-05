@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  padding: $size-xs $size-lg;
+  border-radius: $size-lg;
+  border: none;
+  cursor: pointer;
+  @each $type, $color-map in $variant-color-map {
+    &--#{$type} {
+      background-color: map-get($color-map, 'background-color');
+      color: map-get($color-map, 'color');
+      &:hover {
+        background-color: rgba(map-get($color-map, 'background-color'), 0.75);
+      }
+      &:active {
+        background-color: rgba($color-black, 0.5);
+      }
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        color: rgba(map-get($color-map, 'color'), 0.5);
+        background-color: rgba($color-black, 0.5);
+      }
+    }
+  }
+
+  @each $type, $map in $size-map {
+    &--#{$type} {
+      font-size: map-get($map, 'font-size');
+      line-height: map-get($map, 'line-height');
+      padding: map-get($map, 'spacing') map-get($map, 'spacing') * 2;
+    }
+  }
+
+  &--mobileFull {
+    @include media-breakpoint-down(md) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

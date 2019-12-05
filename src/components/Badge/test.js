@@ -1,39 +1,30 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { SizeList, VariantList } from '../../scss';
 import Badge from '.';
 
 describe('Badge', () => {
-  it('matches snapshot success', () => {
-    const { container } = render(<Badge type="primary" label="test label" />);
-    expect(container).toMatchSnapshot();
+  describe('Sizes', () => {
+    SizeList.forEach(size => {
+      it(`matches snapshot size: ${size}`, () => {
+        const { container } = render(<Badge size={size} label="test label" />);
+        expect(container).toMatchSnapshot();
+      });
+    });
   });
 
-  it('matches snapshot secondary', () => {
-    const { container } = render(<Badge type="secondary" label="test label" />);
-    expect(container).toMatchSnapshot();
+  describe('Variants', () => {
+    VariantList.forEach(variant => {
+      it(`matches snapshot variant: ${variant}`, () => {
+        const { container } = render(
+          <Badge variant={variant} label="test label" />
+        );
+        expect(container).toMatchSnapshot();
+      });
+    });
   });
 
-  it('matches snapshot dark', () => {
-    const { container } = render(<Badge type="dark" label="test label" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('matches snapshot success', () => {
-    const { container } = render(<Badge type="success" label="test label" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('matches snapshot warning', () => {
-    const { container } = render(<Badge type="warning" label="test label" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('matches snapshot error', () => {
-    const { container } = render(<Badge type="error" label="test label" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('display correct text passed by label', () => {
+  it('display correct label', () => {
     const { getByText } = render(<Badge type="error" label="test label" />);
     expect(getByText('test label').innerHTML).toBe('test label');
   });

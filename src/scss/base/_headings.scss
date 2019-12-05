@@ -2,33 +2,39 @@ h1 {
   font-size: $font-size-xl;
   font-weight: $font-weight-light;
   line-height: $line-height-xl;
+  margin: $size-xl/2 0;
 }
 
 h2 {
   font-size: $font-size-lg;
   font-weight: $font-weight-bold;
   line-height: $line-height-lg;
+  margin: $size-lg/2 0;
 }
 
 h3 {
   font-size: $font-size-lg;
   font-weight: $font-weight-regular;
   line-height: $line-height-lg;
+  margin: $size-lg/2 0;
 }
 h4 {
   font-size: $font-size-md;
   font-weight: $font-weight-light;
   line-height: $line-height-md;
   text-transform: uppercase;
+  margin: $size-md/2 0;
 }
 h5 {
   font-size: $font-size-md;
   font-weight: $font-weight-regular;
   line-height: $line-height-md;
+  margin: $size-md/2 0;
 }
 h6 {
   font-size: $font-size-sm;
   font-weight: $font-weight-bold;
   line-height: $line-height-sm;
   text-transform: uppercase;
+  margin: $size-sm/2 0;
 }

@@ -1,25 +1,3 @@
-$color-map: (
-  'default': $bg-color-default,
-  'primary': $bg-color-primary,
-  'secondary': $bg-color-secondary,
-  'dark': $bg-color-dark,
-  'info': $bg-color-info,
-  'success': $bg-color-success,
-  'warning': $bg-color-warning,
-  'error': $bg-color-error,
-  'black': $color-black,
-  'white': $color-white,
-  'yellow': $color-yellow
-) !default;
-
-.text {
-  @each $type, $color in $color-map {
-    &-#{$type} {
-      color: $color;
-    }
-  }
-}
-
 .bg {
   @each $type, $color in $color-map {
     &-#{$type} {
