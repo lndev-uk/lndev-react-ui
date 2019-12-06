@@ -22,6 +22,34 @@ const FontRow = ({ tag, fontFamily, fontWeight, fontSize, lineHeight }) => (
   </tr>
 );
 
+export const Guidelines = () => {
+  return (
+    <div className="container">
+      <h1>Typgraphy Guidelines</h1>
+      <p class="description">
+        CSS3 introduces a few new units, including the <code>rem</code> unit,
+        which stands for <em>"root em"</em>. The <code>rem</code> unit is
+        relative to the font-size of the root element <code>html</code> . That
+        means that we can define a single font size on the root element, and
+        define all <code>rem</code> units to be a percentage of that. The
+        typography has <code>font-size</code> defined in 1.6rem (16px) and{' '}
+        <code>line-height</code> in 1.6 (24px).We use the{' '}
+        <code>font-family</code>
+        <a
+          href="https://www.google.com/fonts/specimen/Roboto"
+          title="Roboto by Christian Robertson"
+          target="_blank"
+          rel="noopener"
+        >
+          {' '}
+          Roboto
+        </a>
+        , created by <u>Christian Robertson</u>, and provided by Google.
+      </p>
+    </div>
+  );
+};
+
 export const HTMLElement = () => {
   return (
     <div className="container">

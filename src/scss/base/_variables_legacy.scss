@@ -1,0 +1,84 @@
+$main-font: Roboto, sans-serif;
+
+//GRID
+$grid-gutter-width: 30px;
+
+// SIZES
+$size-xs: 8px !default;
+$size-sm: 12px !default;
+$size-md: 16px !default;
+$size-lg: 24px !default;
+$size-xl: 32px !default;
+
+$font-size-xs: 0.8rem !default;
+$font-size-sm: 1rem !default;
+$font-size-md: 1.2rem !default;
+$font-size-lg: 1.6rem !default;
+$font-size-xl: 2rem !default;
+
+$line-height-xs: 1rem !default;
+$line-height-sm: 1.2rem !default;
+$line-height-md: 1.4rem !default;
+$line-height-lg: 2rem !default;
+$line-height-xl: 2.4rem !default;
+
+$font-weight-bold: 700 !default;
+$font-weight-regular: 400 !default;
+$font-weight-light: 300 !default;
+
+$breakpoint-xs: 320px !default;
+$breakpoint-sm: 540px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1280px !default;
+
+// COLORS
+$color-black: #000000 !default;
+$color-white: #ffffff !default;
+$color-yellow: #fbf531 !default;
+$color-gray: #969da6 !default;
+$color-gray-light: #eceff1 !default;
+
+$bg-color-default: #eceff1 !default;
+$fg-color-default: #272727 !default;
+$bg-color-primary: #03a9f4 !default;
+$fg-color-primary: $color-white !default;
+$bg-color-secondary: #e91e63 !default;
+$fg-color-secondary: $color-white !default;
+$bg-color-dark: #18232f !default;
+$fg-color-dark: $color-white !default;
+$bg-color-info: #5bc0de !default;
+$fg-color-info: $color-white !default;
+$bg-color-success: #4caf50 !default;
+$fg-color-success: $color-white !default;
+$bg-color-warning: #f0ad4e !default;
+$fg-color-warning: $color-white !default;
+$bg-color-error: #e73c3c !default;
+$fg-color-error: $color-white !default;
+
+// MAPS
+
+$color-map: (
+  'default': $bg-color-default,
+  'primary': $bg-color-primary,
+  'secondary': $bg-color-secondary,
+  'dark': $bg-color-dark,
+  'info': $bg-color-info,
+  'success': $bg-color-success,
+  'warning': $bg-color-warning,
+  'error': $bg-color-error,
+  'black': $color-black,
+  'white': $color-white,
+  'yellow': $color-yellow
+) !default;
+
+$variant-bg-color-map: (
+  'default': $bg-color-default,
+  'primary': $bg-color-primary,
+  'secondary': $bg-color-secondary,
+  'dark': $bg-color-dark,
+  'info': $bg-color-info,
+  'success': $bg-color-success,
+  'warning': $bg-color-warning,
+  'error': $bg-color-error
+);

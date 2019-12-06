@@ -1,34 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
 @import 'utils/reset';
+@import 'utils/Utility';
 
 @import 'base/variables';
 @import 'base/settings';
 
-@import 'animate-sass/animate';
+@import 'base/document';
+@import 'base/typography';
+// @import 'base/variables';
+// @import 'base/settings';
+// //@import 'test/milligram';
 
 @import 'bootstrap/scss/mixins/breakpoints';
 @import 'bootstrap/scss/mixins/grid-framework';
 @import 'bootstrap/scss/mixins/grid';
 @import 'bootstrap/scss/grid';
 
-@import 'base/maps';
+@import 'animate-sass/animate';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import 'elements/blockquote';
+@import 'elements/button';
+@import 'elements/blockquote';
+@import 'elements/code';
+@import 'elements/divider';
+@import 'elements/form';
+@import 'elements/image';
+@import 'elements/link';
+@import 'elements/list';
+@import 'elements/table';
 
-body,
-button {
-  font-family: $main-font;
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-}
+// @import 'base/maps';
 
-@import 'base/defaults';
+// body,
+// button {
+//   font-family: $main-font;
+//   font-size: $font-size-sm;
+//   line-height: $line-height-sm;
+// }
 
-@import 'base/text';
+// @import 'base/defaults';
 
-@import 'base/headings';
-@import 'base/colors';
-@import 'base/table';
+// @import 'base/text';
 
-@import 'components/badge';
-@import 'components/button';
-@import 'components/notification';
+// @import 'base/headings';
+// @import 'base/colors';
+// @import 'base/table';
+
+// @import 'components/badge';
+// @import 'components/button';
+// @import 'components/notification';

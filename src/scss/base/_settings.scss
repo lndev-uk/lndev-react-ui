@@ -1,18 +1,4 @@
-//Animate scss;
-$use-all: false;
-$use-fade: true;
-
-$use-fadeInUpBig: false;
-$use-fadeInDownBig: false;
-$use-fadeInLeftBig: false;
-$use-fadeInRightBig: false;
-
-$use-fadeOutUpBig: false;
-$use-fadeOutDownBig: false;
-$use-fadeOutLeftBig: false;
-$use-fadeOutRightBig: false;
-
-// Fade Enter
+// Elemtns Base
 
 // Bootstrap Grid
 $enable-grid-classes: true;
@@ -35,3 +21,17 @@ $grid-breakpoints: (
   lg: $breakpoint-lg,
   xl: $breakpoint-xl
 );
+
+//Animate scss;
+$use-all: false;
+$use-fade: true;
+
+$use-fadeInUpBig: false;
+$use-fadeInDownBig: false;
+$use-fadeInLeftBig: false;
+$use-fadeInRightBig: false;
+
+$use-fadeOutUpBig: false;
+$use-fadeOutDownBig: false;
+$use-fadeOutLeftBig: false;
+$use-fadeOutRightBig: false;
