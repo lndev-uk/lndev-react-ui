@@ -31,7 +31,7 @@ export const Animated = () => {
     // eslint-disable-next-line no-console
     console.log('Animation Ended', refEnd.current);
   };
-  const [done, reset] = useAnimation(ref, 'fadeIn', callback);
+  const [done, reset] = useAnimation(ref, 'fadeInDown', callback);
   return (
     <div className="container">
       <h1>Notification Animation:</h1>

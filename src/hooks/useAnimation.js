@@ -1,7 +1,25 @@
 //@flow
 import { useEffect, useState } from 'react';
 
-type Animations = 'fadeIn' | 'fadeOut';
+type Animations =
+  | fadeIn
+  | fadeInDown
+  | fadeInDownBig
+  | fadeInLeft
+  | fadeInLeftBig
+  | fadeInRight
+  | fadeInRightBig
+  | fadeInUp
+  | fadeInUpBig
+  | fadeOut
+  | fadeOutDown
+  | fadeOutDownBig
+  | fadeOutLeft
+  | fadeOutLeftBig
+  | fadeOutRight
+  | fadeOutRightBig
+  | fadeOutUp
+  | fadeOutUpBig;
 
 function useAnimation(
   ref: React.ref,
