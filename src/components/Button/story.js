@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '.';
-import { VariantList, SizeList } from '../../scss';
+import { VariantList, SizeList } from '../../scss/bridge';
 
 export default { title: 'Button' };
 

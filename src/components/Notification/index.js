@@ -2,9 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Variant, VariantList } from '../../scss/';
+import { Variant, VariantList } from '../../scss/bridge';
 
-type NotificationType = 'success' | 'info' | 'warning' | 'error';
 
 export type NotificationProps = {
   variant: Variant,

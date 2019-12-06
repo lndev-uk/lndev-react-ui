@@ -64,6 +64,7 @@
     "flow-bin": "^0.113.0",
     "gh-pages": "^1.2.0",
     "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.12",
     "react-dom": "^16.12",
     "react-scripts": "^1.1.4",

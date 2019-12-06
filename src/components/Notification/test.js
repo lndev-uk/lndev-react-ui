@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Notification from '.';
-import { VariantList } from '../../scss';
+import { VariantList } from '../../scss/bridge';
 
 describe('Notification', () => {
   describe('Variant', () => {

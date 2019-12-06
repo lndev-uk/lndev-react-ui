@@ -1,7 +1,7 @@
 //@flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Size, SizeList, Variant, VariantList } from '../../scss/';
+import { Size, SizeList, Variant, VariantList } from '../../scss/bridge';
 
 type HtmlButtonType = 'button' | 'submit' | 'reset';
 

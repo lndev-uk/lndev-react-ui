@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Notification from '.';
-import { VariantList } from '../../scss';
+import { VariantList } from '../../scss/bridge';
 import useAnimation from '../../hooks/useAnimation';
 
 export default {

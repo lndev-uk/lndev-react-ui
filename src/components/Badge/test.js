@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { SizeList, VariantList } from '../../scss';
+import { SizeList, VariantList } from '../../scss/bridge';
 import Badge from '.';
 
 describe('Badge', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import scss from '../scss';
+import scss from '../scss/bridge';
 export default {
   title: 'Typography'
 };
