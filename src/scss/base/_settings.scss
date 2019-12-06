@@ -2,11 +2,21 @@
 $use-all: false;
 $use-fade: true;
 
+$use-fadeInUpBig: false;
+$use-fadeInDownBig: false;
+$use-fadeInLeftBig: false;
+$use-fadeInRightBig: false;
+
+$use-fadeOutUpBig: false;
+$use-fadeOutDownBig: false;
+$use-fadeOutLeftBig: false;
+$use-fadeOutRightBig: false;
+
+// Fade Enter
+
 // Bootstrap Grid
 $enable-grid-classes: true;
-$grid-columns: 12;
-
-$grid-gutter-width: 30px;
+$grid-columns: 6;
 $grid-row-columns: 6;
 $container-padding-x: $grid-gutter-width / 2;
 

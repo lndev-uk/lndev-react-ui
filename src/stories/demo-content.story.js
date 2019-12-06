@@ -4,11 +4,6 @@ export default {
 };
 export const basicHTMLElements = () => (
   <div className="container">
-    <div className="row">
-      <div className="col-sm-4">Col1</div>
-      <div className="col-sm-4">Col2</div>
-      <div className="col-sm-4">Col3</div>
-    </div>
     <h1>
       <span className="text-error">{'<h1>'}</span>Lorem ipsum dolor sit amet
     </h1>
@@ -113,5 +108,10 @@ export const basicHTMLElements = () => (
       <span className="text-error">{'<small>'}</span>Nulla facilisi. Integer
       lacinia sollicitudin massa.
     </small>
+    <div className="row">
+      <div className="col-xs-3 col-sm-2 bg-success">col-sm-1</div>
+      <div className="col-xs-3 col-sm-2 bg-warning">col-sm-2</div>
+      <div className="col-xs-6 col-sm-2 bg-error">col-sm-3</div>
+    </div>
   </div>
 );
