@@ -3,7 +3,7 @@
 exports[`Notification Variant matches snapshot size: dark 1`] = `
 <div>
   <div
-    class="notification notification--dark"
+    class="notification notification--dark "
   >
     <p>
       This is a test 
@@ -16,7 +16,7 @@ exports[`Notification Variant matches snapshot size: dark 1`] = `
 exports[`Notification Variant matches snapshot size: default 1`] = `
 <div>
   <div
-    class="notification notification--default"
+    class="notification notification--default "
   >
     <p>
       This is a test 
@@ -29,7 +29,7 @@ exports[`Notification Variant matches snapshot size: default 1`] = `
 exports[`Notification Variant matches snapshot size: error 1`] = `
 <div>
   <div
-    class="notification notification--error"
+    class="notification notification--error "
   >
     <p>
       This is a test 
@@ -42,7 +42,7 @@ exports[`Notification Variant matches snapshot size: error 1`] = `
 exports[`Notification Variant matches snapshot size: info 1`] = `
 <div>
   <div
-    class="notification notification--info"
+    class="notification notification--info "
   >
     <p>
       This is a test 
@@ -55,7 +55,7 @@ exports[`Notification Variant matches snapshot size: info 1`] = `
 exports[`Notification Variant matches snapshot size: primary 1`] = `
 <div>
   <div
-    class="notification notification--primary"
+    class="notification notification--primary "
   >
     <p>
       This is a test 
@@ -68,7 +68,7 @@ exports[`Notification Variant matches snapshot size: primary 1`] = `
 exports[`Notification Variant matches snapshot size: secondary 1`] = `
 <div>
   <div
-    class="notification notification--secondary"
+    class="notification notification--secondary "
   >
     <p>
       This is a test 
@@ -81,7 +81,7 @@ exports[`Notification Variant matches snapshot size: secondary 1`] = `
 exports[`Notification Variant matches snapshot size: success 1`] = `
 <div>
   <div
-    class="notification notification--success"
+    class="notification notification--success "
   >
     <p>
       This is a test 
@@ -94,7 +94,7 @@ exports[`Notification Variant matches snapshot size: success 1`] = `
 exports[`Notification Variant matches snapshot size: warning 1`] = `
 <div>
   <div
-    class="notification notification--warning"
+    class="notification notification--warning "
   >
     <p>
       This is a test 

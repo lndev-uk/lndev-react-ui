@@ -2,6 +2,7 @@
 @import 'base/maps';
 
 :export {
+  main-font: $main-font;
   @each $type, $size in $font-size-map {
     font-size-#{$type}: $size;
   }

@@ -1,5 +1,6 @@
+//@flow
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import Button from '.';
 import { VariantList, SizeList } from '../../scss';
 
@@ -23,8 +24,18 @@ describe('Button', () => {
       });
     });
   });
+
   it('display correct text passed by label', () => {
     const { container } = render(<Button type="primary" label="test label" />);
     expect(container.querySelector('button').innerHTML).toBe('test label');
+  });
+
+  it('called onClick ', () => {
+    const onClick = jest.fn();
+    const { getByText } = render(
+      <Button type="primary" onClick={onClick} label="test label" />
+    );
+    fireEvent.click(getByText('test label'));
+    expect(onClick).toHaveBeenCalled();
   });
 });

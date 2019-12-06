@@ -1,5 +1,8 @@
 @import 'utils/reset';
 
+@import 'animate/settings';
+@import 'animate-sass/animate';
+
 @import 'base/variables';
 @import 'base/maps';
 
@@ -7,9 +10,10 @@
 @import 'base/grid';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
 body,
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: $main-font;
   font-size: $font-size-sm;
   line-height: $line-height-sm;
 }
@@ -20,6 +24,7 @@ button {
 
 @import 'base/headings';
 @import 'base/colors';
+@import 'base/table';
 
 @import 'components/badge';
 @import 'components/button';

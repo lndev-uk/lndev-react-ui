@@ -23,7 +23,7 @@
     "storybook": "npm run lndev && start-storybook -p 9009",
     "build:storybook": "npm run lndev && build-storybook -o ./build/",
     "build:css": "npm run lndev && npm run scss:compile",
-    "scss:compile": "node-sass ./src/scss/index.scss ./dist/css/style.min.css --output-style compressed --source-map true",
+    "scss:compile": "node-sass ./src/scss/index.scss ./dist/css/style.min.css --output-style compressed --source-map true --include-path ./node_modules --source-comments false",
     "lndev": "node LNDev.js"
   },
   "peerDependencies": {
@@ -39,6 +39,7 @@
     "@svgr/rollup": "^2.4.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
+    "animate-sass": "^0.8.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.5",

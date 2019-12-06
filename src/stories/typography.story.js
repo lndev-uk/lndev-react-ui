@@ -1,5 +1,5 @@
 import React from 'react';
-import scssVariables from '../scss/base/_variables.scss';
+import scss from '../scss';
 export default {
   title: 'Typography'
 };
@@ -21,72 +21,78 @@ const FontRow = ({ tag, fontFamily, fontWeight, fontSize, lineHeight }) => (
   </tr>
 );
 
-export const ByHTMLElement = () => {
+export const HTMLElement = () => {
   return (
-    <div>
-      <h1>Typgraphy</h1>
-      <hr />
+    <div className="container">
+      <h1>Typgraphy By Element</h1>
       <div>
-        <h3>By Element</h3>
         <table className="table">
           <thead>
             <tr>
               <th>Element</th>
-              <th>font-family</th>
-              <th>font-weihgt</th>
-              <th>font-size</th>
-              <th>line-height</th>
+              <th>
+                font-family (var <b>:</b> val)
+              </th>
+              <th>
+                font-weight (var <b>:</b> val)
+              </th>
+              <th>
+                font-size (var <b>:</b> val)
+              </th>
+              <th>
+                line-height (var <b>:</b> val)
+              </th>
             </tr>
           </thead>
           <tbody>
             <FontRow
               tag="<h1>H1</h1>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-bold: ${scssVariables['fwBold']}`}
-              fontSize={`$fz-huge: ${scssVariables['fzHuge']}`}
-              lineHeight={`$lh-huge: ${scssVariables['lhHuge']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-light: ${scss['fwBold']}`}
+              fontSize={`$font-size-xl: ${scss['ffBase']}`}
+              lineHeight={`$lh-huge: ${scss['lhHuge']}`}
             />
             <FontRow
               tag="<h2>H2</h2>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-light: ${scssVariables['fwLight']}`}
-              fontSize={`$fz-huge: ${scssVariables['fzHuge']}`}
-              lineHeight={`$lh-huge: ${scssVariables['lhHuge']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weiht-bold: ${scss['fwLight']}`}
+              fontSize={`$fz-huge: ${scss['fzHuge']}`}
+              lineHeight={`$lh-huge: ${scss['lhHuge']}`}
             />
             <FontRow
               tag="<h3>H3</h3>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-bold: ${scssVariables['fwBold']}`}
-              fontSize={`$fz-big: ${scssVariables['fzBig']}`}
-              lineHeight={`$lh-big: ${scssVariables['lhBig']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-normal: ${scss['fwBold']}`}
+              fontSize={`$fz-big: ${scss['fzBig']}`}
+              lineHeight={`$lh-big: ${scss['lhBig']}`}
             />
             <FontRow
               tag="<h4>H4</h4>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-lihgt: ${scssVariables['fwLight']}`}
-              fontSize={`$fz-big: ${scssVariables['fzBig']}`}
-              lineHeight={`$lh-big: ${scssVariables['lhBig']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-light: ${scss['fwLight']}`}
+              fontSize={`$fz-big: ${scss['fzBig']}`}
+              lineHeight={`$lh-big: ${scss['lhBig']}`}
             />
             <FontRow
               tag="<h5>H5</h5>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-bold: ${scssVariables['fwBold']}`}
-              fontSize={`$fz-medium: ${scssVariables['fzMedium']}`}
-              lineHeight={`$lh-medium: ${scssVariables['lhMedium']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-normal: ${scss['fwBold']}`}
+              fontSize={`$fz-medium: ${scss['fzMedium']}`}
+              lineHeight={`$lh-medium: ${scss['lhMedium']}`}
             />
             <FontRow
               tag="<h6>H6</h6>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-bold: ${scssVariables['fwBold']}`}
-              fontSize={`$fz-small: ${scssVariables['fzSmall']}`}
-              lineHeight={`$lh-small: ${scssVariables['lhSmall']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-bold: ${scss['fwBold']}`}
+              fontSize={`$fz-small: ${scss['fzSmall']}`}
+              lineHeight={`$lh-small: ${scss['lhSmall']}`}
             />
             <FontRow
               tag="<p>p</p>"
-              fontFamily={`$ff-base: ${scssVariables['ffBase']}`}
-              fontWeight={`$fw-base: ${scssVariables['fwBase']}`}
-              fontSize={`$fz-base: ${scssVariables['fzBase']}`}
-              lineHeight={`$lh-base: ${scssVariables['lhBase']}`}
+              fontFamily={`$main-font: ${scss.mainFont}`}
+              fontWeight={`$font-weight-normal: ${scss['fwBase']}`}
+              fontSize={`$fz-base: ${scss['fzBase']}`}
+              lineHeight={`$lh-base: ${scss['lhBase']}`}
             />
           </tbody>
         </table>
@@ -95,13 +101,11 @@ export const ByHTMLElement = () => {
   );
 };
 
-export const ByCSSClass = () => {
+export const CSSSizeClass = () => {
   return (
     <div className="container">
-      <h1>Typgraphy</h1>
-      <hr />
+      <h1>Typgraphy by CSS Class</h1>
       <div>
-        <h3>By CSS Class</h3>
         <table className="table">
           <thead>
             <tr className="text-left">
@@ -117,40 +121,48 @@ export const ByCSSClass = () => {
               tag="<p class='text-huge'>.text-huge</p>"
               fontFamily={`inherit`}
               fontWeight={`inherit`}
-              fontSize={`$fz-huge: ${scssVariables['fzHuge']}`}
-              lineHeight={`$lh-huge: ${scssVariables['lhHuge']}`}
+              fontSize={`$fz-huge: ${scss['fzHuge']}`}
+              lineHeight={`$lh-huge: ${scss['lhHuge']}`}
             />
             <FontRow
               tag="<p class='text-big'>.text-big</p>"
               fontFamily={`inherit`}
               fontWeight={`inherit`}
-              fontSize={`$fz-big: ${scssVariables['fzBig']}`}
-              lineHeight={`$lh-big: ${scssVariables['lhBig']}`}
+              fontSize={`$fz-big: ${scss['fzBig']}`}
+              lineHeight={`$lh-big: ${scss['lhBig']}`}
             />
             <FontRow
               tag="<p class='text-medium'>.text-medium</p>"
               fontFamily={`inherit`}
               fontWeight={`inherit`}
-              fontSize={`$fz-medium: ${scssVariables['fzMedium']}`}
-              lineHeight={`$lh-medium: ${scssVariables['lhMedium']}`}
+              fontSize={`$fz-medium: ${scss['fzMedium']}`}
+              lineHeight={`$lh-medium: ${scss['lhMedium']}`}
             />
             <FontRow
               tag="<p class='text-small'>.text-small</p>"
               fontFamily={`inherit`}
               fontWeight={`inherit`}
-              fontSize={`$fz-small: ${scssVariables['fzSmall']}`}
-              lineHeight={`$lh-small: ${scssVariables['lhSmall']}`}
+              fontSize={`$fz-small: ${scss['fzSmall']}`}
+              lineHeight={`$lh-small: ${scss['lhSmall']}`}
             />
             <FontRow
               tag="<p class='text-body'>.text-body</p>"
               fontFamily={`inherit`}
               fontWeight={`inherit`}
-              fontSize={`$fz-body: ${scssVariables['fzBody']}`}
-              lineHeight={`$lh-body: ${scssVariables['lhBody']}`}
+              fontSize={`$fz-body: ${scss['fzBody']}`}
+              lineHeight={`$lh-body: ${scss['lhBody']}`}
             />
           </tbody>
         </table>
       </div>
     </div>
   );
+};
+
+export const CSSVariantClass = () => {
+  return <div></div>;
+};
+
+export const CSSHelperClass = () => {
+  return <div></div>;
 };

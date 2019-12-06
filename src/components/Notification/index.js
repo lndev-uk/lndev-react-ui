@@ -8,20 +8,28 @@ type NotificationType = 'success' | 'info' | 'warning' | 'error';
 
 export type NotificationProps = {
   variant: Variant,
-  children: React.ReactNode
+  children: React.ReactNode,
+  className?: String
 };
-// onClick a funciton if defined add close button
+
 // onTimeout a function that if defined will use a timer to call the callback
-export default function Notification(
-  props: NotificationProps
+export const Notification = React.forwardRef(function Notification(
+  props: NotificationProps,
+  ref: React.ref
 ): React.ReactNode {
-  const { variant, children } = props;
+  const { variant = 'default', children, className = '' } = props;
   const typeClassName = 'notification--' + variant;
-  return <div className={`notification ${typeClassName}`}>{children}</div>;
-}
-Notification.defaultProps = { variant: 'default' };
+
+  return (
+    <div ref={ref} className={`notification ${typeClassName} ${className}`}>
+      {children}
+    </div>
+  );
+});
 
 Notification.propTypes = {
   variant: PropTypes.oneOf(VariantList),
   children: PropTypes.node.isRequired
 };
+
+export default Notification;

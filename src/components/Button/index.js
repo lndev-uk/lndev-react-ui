@@ -12,11 +12,22 @@ export type ButtonProps = {
   variant: Variant,
   type: HtmlButtonType,
   name: String,
-  disabled: Boolean
+  disabled: Boolean,
+  onClick: (e: MouseEvent) => null
 };
 
 export default function Button(props: ButtonProps): React.ReactNode {
-  const { variant, label, size, mobileFull, htmlType, name, disabled } = props;
+  const {
+    variant,
+    label,
+    size,
+    mobileFull,
+    htmlType,
+    name,
+    disabled,
+    onClick
+  } = props;
+  const onClickHandler = onClick ? onClick : (e: MouseEvent): null => null;
   const sizeClassName = size ? 'button--' + size : '';
   const variantClassName = 'button--' + variant;
   const mobileFullClassName = mobileFull ? 'button--mobileFull' : '';
@@ -28,6 +39,7 @@ export default function Button(props: ButtonProps): React.ReactNode {
       {...nameAttr}
       {...disabledAttr}
       className={`button  ${variantClassName} ${sizeClassName} ${mobileFullClassName}`}
+      onClick={onClickHandler}
     >
       {label}
     </button>

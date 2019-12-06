@@ -1,3 +1,5 @@
+$main-font: Roboto, sans-serif;
+
 // SIZES
 $size-xs: 8px !default;
 $size-sm: 12px !default;
@@ -34,6 +36,8 @@ $grid-columns: 12 !default;
 $color-black: #000000 !default;
 $color-white: #ffffff !default;
 $color-yellow: #fbf531 !default;
+$color-gray: #969da6 !default;
+$color-gray-light: #eceff1 !default;
 
 $bg-color-default: #eceff1 !default;
 $fg-color-default: #272727 !default;

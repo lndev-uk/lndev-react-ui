@@ -26,7 +26,7 @@ export type Variant =
 export const SizeList = ['xs', 'sm', 'md', 'lg', 'xl'];
 export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
-const getVariables = (name: string): Object => {
+const getSizeVariables = (name: string): Object => {
   var obj = SizeList.reduce((entry: Object, key: String): Object => {
     entry[key] = variablesSCSS[`${name}-${key}`];
     return entry;
@@ -35,10 +35,12 @@ const getVariables = (name: string): Object => {
 };
 
 export const variables = {
-  breakpoints: getVariables('breakpoint'),
-  sizes: getVariables('size'),
-  lineHeights: getVariables('line-height'),
-  fontSizes: getVariables('font-size')
+  breakpoints: getSizeVariables('breakpoint'),
+  sizes: getSizeVariables('size'),
+  lineHeights: getSizeVariables('line-height'),
+  fontSizes: getSizeVariables('font-size'),
+  fontWeights: {},
+  mainFont: variablesSCSS['main-font']
 };
 
 export default variables;
