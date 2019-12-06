@@ -1,14 +1,14 @@
 .notification {
-  padding: $size-md;
-  margin-bottom: $size-md;
+  padding: #{$size-md}rem;
+  margin-bottom: #{$size-md}rem;
   display: inline-block;
   width: 100%;
-  border-radius: $size-xs/2;
+  border-radius: #{$size-md/8}rem;
   @each $type, $map in $variant-color-map {
     &--#{$type} {
-      background-color: rgba(map-get($map, 'background-color'), 0.5);
-      color: $color-black;
-      border: 1px solid map-get($map, 'background-color');
+      background-color: rgba(map-get($map, 'background-color'), 0.75);
+      color: map-get($map, 'color');
+      border: 0.1rem solid map-get($map, 'background-color');
     }
   }
 }

@@ -1,37 +1,59 @@
+.button,
 button,
-.button {
-  display: inline-block;
-  padding: $size-xs $size-lg;
-  border-radius: $size-lg;
-  border: none;
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: $color-primary;
+  border: 0.1rem solid rgba($color-primary, 0.75);
+  border-radius: 0.4rem;
+  color: $color-initial;
   cursor: pointer;
+  display: inline-block;
+  font-size: #{$size-sm}rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: #{$size-sm + ($size-sm * 0.2)}rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:focus,
+  &:hover {
+    background-color: rgba($color-primary, 0.75);
+    border-color: $color-primary;
+    color: $color-initial;
+    outline: 0;
+  }
+  &[disabled] {
+    cursor: default;
+    background-color: rgba($color-primary, 0.5);
+    opacity: 0.5;
+  }
+}
+
+.button {
   @each $type, $color-map in $variant-color-map {
     &--#{$type} {
-      background-color: map-get($color-map, 'background-color');
-      color: map-get($color-map, 'color');
+      background-color: rgba(map-get($color-map, "background-color"), 1);
+      border: 0.1rem solid rgba(map-get($color-map, "background-color"), 0.75);
+      color: map-get($color-map, "color");
+      &:focus,
       &:hover {
-        background-color: rgba(map-get($color-map, 'background-color'), 0.75);
-      }
-      &:active {
-        background-color: rgba($color-black, 0.5);
-      }
-      &:disabled {
-        cursor: not-allowed;
-        opacity: 0.5;
-        color: rgba(map-get($color-map, 'color'), 0.5);
-        background-color: rgba($color-black, 0.5);
+        background-color: rgba(map-get($color-map, "background-color"), 0.75);
+        border: 0.1rem solid rgba(map-get($color-map, "background-color"), 1);
+        color: map-get($color-map, "color");
       }
     }
   }
-
-  @each $type, $map in $size-map {
+  @each $type, $size in $size-map {
     &--#{$type} {
-      font-size: map-get($map, 'font-size');
-      line-height: map-get($map, 'line-height');
-      padding: map-get($map, 'spacing') map-get($map, 'spacing') * 2;
+      font-size: #{$size}rem;
+      line-height: #{$size + ($size * 2)}rem;
+      padding: 0 #{$size}rem;
     }
   }
-
   &--mobileFull {
     @include media-breakpoint-down(md) {
       margin: 0;

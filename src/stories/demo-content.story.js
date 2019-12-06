@@ -31,8 +31,8 @@ export const basicHTMLElements = () => (
       <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
       Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
       <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
-      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b>"}</code>
-      <b>Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
+      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b class='bg-warning'>"}</code>
+      <b className="bg-warning">Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
       Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
       augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
       <code>{"<i>"}</code>

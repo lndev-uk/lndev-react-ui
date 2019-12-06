@@ -1,5 +1,6 @@
 // Text helper classes
 
+
 .text-light {
   font-weight: $font-weight-light;
 }
@@ -53,9 +54,9 @@
 }
 
 .text {
-  @each $type, $color-map in $variant-color-map {
+  @each $type, $color in $color-map {
     &-#{$type} {
-      color: map-get($color-map, 'foreground-color');
+      color: $color;
     }
   }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import Badge from '.';
-import { VariantList, SizeList } from '../../scss';
+import React from "react";
+import Badge from ".";
+import { VariantList, SizeList } from "../../scss";
 
-export default { title: 'Badge' };
+export default { title: "Badge" };
 
 export const Variants = () => (
   <div className="container">
@@ -33,10 +33,11 @@ export const Sizes = () => (
 export const Example = () => (
   <div className="container">
     <h1>Example:</h1>
-    <code>
+    <p>
       If Size is not specified the Badges scale to match the size of the
       immediate parent element by using relative font sizing and em units.
-    </code>
+    </p>
+    <hr />
     <h1>
       Example heading <Badge variant="primary" label="Primary" />
     </h1>

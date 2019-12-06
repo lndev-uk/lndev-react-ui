@@ -6,7 +6,6 @@ export const VariantList = [
   'default',
   'primary',
   'secondary',
-  'dark',
   'info',
   'success',
   'warning',
@@ -17,7 +16,6 @@ export type Variant =
   | 'default'
   | 'primary'
   | 'secondary'
-  | 'dark'
   | 'info'
   | 'success'
   | 'warning'
@@ -35,12 +33,7 @@ const getSizeVariables = (name: string): Object => {
 };
 
 export const variables = {
-  breakpoints: getSizeVariables('breakpoint'),
-  sizes: getSizeVariables('size'),
-  lineHeights: getSizeVariables('line-height'),
-  fontSizes: getSizeVariables('font-size'),
-  fontWeights: {},
-  mainFont: variablesSCSS['main-font']
+  breakpoints: getSizeVariables('breakpoint')
 };
 
 export default variables;

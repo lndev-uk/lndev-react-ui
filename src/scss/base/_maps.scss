@@ -1,111 +1,71 @@
 $default-map: (
-  'background-color': $bg-color-default,
-  'color': $fg-color-default
+  "background-color": $color-default,
+  "color": $color-initial
 );
 $primary-map: (
-  'background-color': $bg-color-primary,
-  'foregorund-color': $fg-color-primary,
-  'color': $fg-color-primary
+  "background-color": $color-primary,
+  "color": $color-initial
 );
 $secondary-map: (
-  'background-color': $bg-color-secondary,
-  'foregorund-color': $fg-color-secondary,
-  'color': $fg-color-secondary
-);
-$dark-map: (
-  'background-color': $bg-color-dark,
-  'foregorund-color': $fg-color-dark,
-  'color': $fg-color-dark
+  "background-color": $color-secondary,
+  "color": $color-initial
 );
 $info-map: (
-  'background-color': $bg-color-info,
-  'foregorund-color': $fg-color-info,
-  'color': $fg-color-info
+  "background-color": $color-info,
+  "color": $color-initial
 );
 
 $success-map: (
-  'background-color': $bg-color-success,
-  'foregorund-color': $fg-color-success,
-  'color': $fg-color-success
+  "background-color": $color-success,
+  "color": $color-initial
 );
 
 $warning-map: (
-  'background-color': $bg-color-warning,
-  'foregorund-color': $fg-color-warning,
-  'color': $fg-color-warning
+  "background-color": $color-warning,
+  "color": $color-default
 );
 
 $error-map: (
-  'background-color': $bg-color-error,
-  'foregorund-color': $fg-color-error,
-  'color': $fg-color-error
+  "background-color": $color-error,
+  "color": $color-initial
 );
 
 $variant-color-map: (
-  'default': $default-map,
-  'primary': $primary-map,
-  'secondary': $secondary-map,
-  'dark': $dark-map,
-  'info': $info-map,
-  'success': $success-map,
-  'warning': $warning-map,
-  'error': $error-map
-);
-
-$xs-szie-map: (
-  'font-size': $font-size-xs,
-  'line-height': $line-height-xs,
-  'spacing': $size-xs
-);
-$sm-szie-map: (
-  'font-size': $font-size-sm,
-  'line-height': $line-height-sm,
-  'spacing': $size-sm
-);
-$md-szie-map: (
-  'font-size': $font-size-md,
-  'line-height': $line-height-md,
-  'spacing': $size-md
-);
-$lg-szie-map: (
-  'font-size': $font-size-lg,
-  'line-height': $line-height-lg,
-  'spacing': $size-lg
-);
-$xl-szie-map: (
-  'font-size': $font-size-xl,
-  'line-height': $line-height-xl,
-  'spacing': $size-xl
-);
-
-$size-map: (
-  'xs': $xs-szie-map,
-  'sm': $sm-szie-map,
-  'md': $md-szie-map,
-  'lg': $lg-szie-map,
-  'xl': $xl-szie-map
-);
-
-$font-size-map: (
-  'xs': $font-size-xs,
-  'sm': $font-size-sm,
-  'md': $font-size-md,
-  'lg': $font-size-lg,
-  'xl': $font-size-xl
-);
-
-$line-height-map: (
-  'xs': $line-height-xs,
-  'sm': $line-height-sm,
-  'md': $line-height-md,
-  'lg': $line-height-lg,
-  'xl': $line-height-xl
+  "default": $default-map,
+  "primary": $primary-map,
+  "secondary": $secondary-map,
+  "info": $info-map,
+  "success": $success-map,
+  "warning": $warning-map,
+  "error": $error-map
 );
 
 $breakpoint-map: (
-  'xs': $breakpoint-xs,
-  'sm': $breakpoint-sm,
-  'md': $breakpoint-md,
-  'lg': $breakpoint-lg,
-  'xl': $breakpoint-xl
+  "xs": $breakpoint-xs,
+  "sm": $breakpoint-sm,
+  "md": $breakpoint-md,
+  "lg": $breakpoint-lg,
+  "xl": $breakpoint-xl
 );
+
+$size-map: (
+  "xs": $size-xs,
+  "sm": $size-sm,
+  "md": $size-md,
+  "lg": $size-lg,
+  "xl": $size-xl
+);
+
+$color-map: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+  "quaternary": $color-quaternary,
+  "quinary": $color-quinary,
+  "default": $color-default,
+  "success": $color-success,
+  "info": $color-info,
+  "warning": $color-warning,
+  "error": $color-error
+);
+

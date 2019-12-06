@@ -4,14 +4,15 @@
 @import 'utils/Utility';
 
 @import 'base/variables';
-@import 'base/settings';
+@import 'base/maps';
+@import 'base/externals';
 
 @import 'base/defaults';
 @import 'base/document';
 @import 'base/typography';
-// @import 'base/variables';
-// @import 'base/settings';
-// //@import 'test/milligram';
+@import 'base/spacing';
+@import "base/color";
+@import 'base/text';
 
 @import 'bootstrap/scss/mixins/breakpoints';
 @import 'bootstrap/scss/mixins/grid-framework';
@@ -21,8 +22,6 @@
 @import 'animate-sass/animate';
 
 @import 'elements/blockquote';
-@import 'elements/button';
-@import 'elements/blockquote';
 @import 'elements/code';
 @import 'elements/divider';
 @import 'elements/form';
@@ -31,23 +30,7 @@
 @import 'elements/list';
 @import 'elements/table';
 
-// @import 'base/maps';
 
-// body,
-// button {
-//   font-family: $main-font;
-//   font-size: $font-size-sm;
-//   line-height: $line-height-sm;
-// }
-
-// @import 'base/defaults';
-
-// @import 'base/text';
-
-// @import 'base/headings';
-// @import 'base/colors';
-// @import 'base/table';
-
-// @import 'components/badge';
-// @import 'components/button';
-// @import 'components/notification';
+@import 'components/badge';
+@import 'components/button';
+@import 'components/notification';

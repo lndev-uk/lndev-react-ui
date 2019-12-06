@@ -31,7 +31,7 @@ export const Sizes = () => (
 );
 
 export const mobileFull = () => (
-  <div>
+  <div className="container">
     <div>Enable Chrome Dev Tools and simulate mobile/tabelt</div>
     <div>
       <Button mobileFull={true} label="Full Width Mobile" />
