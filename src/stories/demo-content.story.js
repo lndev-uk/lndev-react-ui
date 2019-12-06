@@ -17,9 +17,11 @@ export const basicHTMLElements = () => (
       nibh elementum imperdiet. <code>{"<strong>"}</code>{" "}
       <strong>Duis sagittis ipsum. Praesent mauris.</strong>{" "}
       <code>{"</strong>"}</code> Fusce nec tellus sed augue semper porta. Mauris
-      massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
-      litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-      sodales ligula in libero. <code>{"</p>"}</code>
+      massa. Vestibulum lacinia arcu eget nulla. <code>{"<a>"}</code>
+      <a href="#">Class aptent taciti </a>
+      <code>{"</a>"}</code>sociosqu ad litora torquent per conubia nostra, per
+      inceptos himenaeos. Curabitur sodales ligula in libero.{" "}
+      <code>{"</p>"}</code>
     </p>
     <h2>
       Lorem ipsum dolor sit amet{" "}
@@ -31,11 +33,13 @@ export const basicHTMLElements = () => (
       <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
       Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
       <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
-      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b class='bg-warning'>"}</code>
-      <b className="bg-warning">Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
-      Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
-      augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
-      <code>{"<i>"}</code>
+      <code>{"</i>"}</code> Integer id quam. Morbi mi.{" "}
+      <code>{"<b class='bg-warning'>"}</code>
+      <b className="bg-warning">
+        Morbi in dui quis est pulvinar ullamcorper
+      </b>. <code>{"<b>"}</code> Quisque nisl felis, venenatis tristique,
+      dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
+      Nulla quam. Aenean laoreet. <code>{"<i>"}</code>
       <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augu</i>e
       <code>{"</i>"}</code>
       Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{" "}
