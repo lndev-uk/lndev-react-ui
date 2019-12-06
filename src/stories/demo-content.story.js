@@ -1,117 +1,142 @@
-import React from 'react';
+import React from "react";
 export default {
-  title: 'Demo Content'
+  title: "Demo Content"
 };
 export const basicHTMLElements = () => (
   <div className="container">
     <h1>
-      <span className="text-error">{'<h1>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet{" "}
+      <small>
+        <code>{"<h1>"}</code>
+      </small>
     </h1>
     <p>
-      <span className="text-error">{'<p>'}</span>Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
-      ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-      Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
-      porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-      himenaeos. Curabitur sodales ligula in libero.{' '}
+      <code>{"<p>"}</code>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+      nibh elementum imperdiet. <code>{"<strong>"}</code>{" "}
+      <strong>Duis sagittis ipsum. Praesent mauris.</strong>{" "}
+      <code>{"</strong>"}</code> Fusce nec tellus sed augue semper porta. Mauris
+      massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+      sodales ligula in libero. <code>{"</p>"}</code>
     </p>
     <h2>
-      <span className="text-error">{'<h2>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet{" "}
+      <small>
+        <code>{"<h2>"}</code>
+      </small>
     </h2>
     <p>
-      <span className="text-error">{'<b>'}</span>
-      <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Sed
-      dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.{' '}
-      <span className="text-error">{'<b>'}</span>
-      <b className="bg-yellow">Fusce nec tellus sed augue semper porta</b>.
-      Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
-      tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
-      risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis
-      ligula lacinia aliquet. Mauris ipsum.{' '}
+      <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
+      Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
+      <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
+      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b>"}</code>
+      <b>Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
+      Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
+      augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
+      <code>{"<i>"}</code>
+      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augu</i>e
+      <code>{"</i>"}</code>
+      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{" "}
+      <code>{"</p>"}</code>
     </p>
     <h3>
-      <span className="text-error">{'<h3>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet
+      <small>
+        <code>{"<h3>"}</code>
+      </small>
     </h3>
     <p>
-      <span className="text-error">{'<p>'}</span>Nulla metus metus, ullamcorper
-      vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-      inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis,
-      tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla
-      facilisi. Ut fringilla. Suspendisse potenti.{' '}
-      <span className="text-error">{'<b>'}</span>
-      <b>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh</b>
-      . Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.{' '}
-      <span className="text-error">{'<i>'}</span>
-      <i>In scelerisque sem at dolor</i>. Proin quam. Etiam ultrices.{' '}
+      <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
+      Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
+      <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
+      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b>"}</code>
+      <b>Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
+      Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
+      augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
+      <code>{"<i>"}</code>
+      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augu</i>e
+      <code>{"</i>"}</code>
+      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{" "}
+      <code>{"</p>"}</code>
     </p>
     <h4>
-      <span className="text-error">{'<h4>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet{" "}
+      <small>
+        <code>{"<h4>"}</code>
+      </small>
     </h4>
-    <span className="text-error">{'<ul>'}</span>
+    <code>{"<ul>"}</code>
     <ul>
       <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor sit amet
+        <code>{"<li>"}</code>Lorem ipsum dolor sit amet
       </li>
-      <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor sit{' '}
-      </li>
-      <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor{' '}
-      </li>
+      <li>Lorem ipsum dolor sit </li>
+      <li>Lorem ipsum dolor </li>
     </ul>
-    <br />
-    <span className="text-error">{'<ol>'}</span>
+    <code>{"<hr/>"}</code>
+    <hr />
+    <code>{"<ol>"}</code>
     <ol>
       <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor sit amet
+        <code>{"<li>"}</code>Lorem ipsum dolor sit amet
       </li>
-      <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor sit{' '}
-      </li>
-      <li>
-        <span className="text-error">{'<li>'}</span>Lorem ipsum dolor{' '}
-      </li>
+      <li>Lorem ipsum dolor sit </li>
+      <li>Lorem ipsum dolor </li>
     </ol>
+    <br />
+    <code>{"<br/>"}</code>
+    <br />
+    <code>{"<small>"}</code>
+    <small>Nulla facilisi. Integer lacinia sollicitudin massa.</small>
+    <code>{"</small>"}</code>
+    <br />
+    <code>{"<br/>"}</code>
     <h5>
-      <span className="text-error">{'<h5>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet{" "}
+      <small>
+        <code>{"<h5>"}</code>
+      </small>
     </h5>
     <p>
-      <span className="text-error">{'<p>'}</span>Nulla facilisi. Integer lacinia
-      sollicitudin massa. Cras metus. Sed aliquet risus a tortor.{' '}
-      <span className="text-error">{'<i>'}</span>
-      <i>Suspendisse in justo eu magna luctus suscipit</i>. Integer id quam.
-      Morbi mi. <span className="text-error">{'<b>'}</span>
-      <b>Morbi in dui quis est pulvinar ullamcorper</b>. Quisque nisl felis,
-      venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales
-      libero eget ante. Nulla quam. Aenean laoreet.{' '}
-      <span className="text-error">{'<i>'}</span>
-      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue</i>.
-      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{' '}
+      <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
+      Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
+      <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
+      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b>"}</code>
+      <b>Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
+      Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
+      augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
+      <code>{"<i>"}</code>
+      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augu</i>e
+      <code>{"</i>"}</code>
+      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{" "}
+      <code>{"</p>"}</code>
     </p>
     <h6>
-      <span className="text-error">{'<h6>'}</span>Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet{" "}
+      <small>
+        <code>{"<h6>"}</code>
+      </small>
     </h6>
     <p>
-      <span className="text-error">{'<p>'}</span> Cras metus. Sed aliquet risus
-      a tortor. <span className="text-error">{'<i>'}</span>
-      <i>Suspendisse in justo eu magna luctus suscipit</i>. Integer id quam.
-      Morbi mi. <span className="text-error">{'<b>'}</span>
-      <b>Morbi in dui quis est pulvinar ullamcorper</b>. Quisque nisl felis,
-      venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales
-      libero eget ante. Nulla quam. Aenean laoreet.{' '}
-      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue</i>.
-      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{' '}
+      <code>{"<p>"}</code>Nulla facilisi. Integer lacinia sollicitudin massa.
+      Cras metus. Sed aliquet risus a tortor. <code>{"<i>"}</code>
+      <i>Suspendisse in justo eu magna luctus suscipit</i>.{" "}
+      <code>{"</i>"}</code> Integer id quam. Morbi mi. <code>{"<b>"}</code>
+      <b>Morbi in dui quis est pulvinar ullamcorper</b>. <code>{"<b>"}</code>{" "}
+      Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet,
+      augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.{" "}
+      <code>{"<i>"}</code>
+      <i>Donec lacus nunc, viverra nec, blandit vel, egestas et, augu</i>e
+      <code>{"</i>"}</code>
+      Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede.{" "}
+      <code>{"</p>"}</code>
     </p>
-    <small>
-      <span className="text-error">{'<small>'}</span>Nulla facilisi. Integer
-      lacinia sollicitudin massa.
-    </small>
     <div className="row">
-      <div className="col-xs-3 col-sm-2 bg-success">col-sm-1</div>
-      <div className="col-xs-3 col-sm-2 bg-warning">col-sm-2</div>
-      <div className="col-xs-6 col-sm-2 bg-error">col-sm-3</div>
+      <div className="col-xs-3 col-sm-2 bg-success">col-xs-3 col-sm-2</div>
+      <div className="col-xs-3 col-sm-2 bg-warning">col-xs-3 col-sm-2 </div>
+      <div className="col-xs-6 col-sm-2 bg-error">col-xs-6 col-sm-2 </div>
     </div>
   </div>
 );

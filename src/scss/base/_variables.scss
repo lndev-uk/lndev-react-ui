@@ -2,20 +2,8 @@
 // FONT
 $main-font: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-$font-size-xs: 0.8rem !default;
-$font-size-sm: 1rem !default;
-$font-size-md: 1.2rem !default;
-$font-size-lg: 1.6rem !default;
-$font-size-xl: 2rem !default;
-
-$line-height-xs: 1rem !default;
-$line-height-sm: 1.2rem !default;
-$line-height-md: 1.4rem !default;
-$line-height-lg: 2rem !default;
-$line-height-xl: 2.4rem !default;
-
-$font-weight-bold: 700 !default;
 $font-weight-regular: 400 !default;
+$font-weight-bold: 700 !default;
 $font-weight-light: 300 !default;
 
 $breakpoint-xs: 320px !default;
@@ -29,6 +17,7 @@ $grid-gutter-width: 30px !default;
 
 $body-font-family: $main-font;
 $body-font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
-$body-letter-spacing: 0.01em;
-$body-font-weight: 300;
 $body-line-height: 1.6;
+$body-letter-spacing: 0.01em;
+$body-font-weight: $font-weight-regular;
+
