@@ -3,6 +3,7 @@ import scss from '../scss';
 export default {
   title: 'Typography'
 };
+
 const FontRow = ({ tag, fontFamily, fontWeight, fontSize, lineHeight }) => (
   <tr>
     <td dangerouslySetInnerHTML={{ __html: tag }}></td>

@@ -1,13 +1,16 @@
 @import 'utils/reset';
 
-@import 'animate/settings';
+@import 'base/variables';
+@import 'base/settings';
+
 @import 'animate-sass/animate';
 
-@import 'base/variables';
-@import 'base/maps';
+@import 'bootstrap/scss/mixins/breakpoints';
+@import 'bootstrap/scss/mixins/grid-framework';
+@import 'bootstrap/scss/mixins/grid';
+@import 'bootstrap/scss/grid';
 
-@import 'utils/breakpoints';
-@import 'base/grid';
+@import 'base/maps';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
