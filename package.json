@@ -16,14 +16,14 @@
     "test": "npm run lndev && cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "npm run lndev && react-scripts test --env=jsdom",
     "build": "npm run lndev && rollup -c && cp -r ./src/scss ./dist && npm run scss:compile",
+    "build:css": "npm run lndev && npm run scss:compile",
+    "build:storybook": "npm run lndev && build-storybook -o ./build/",
     "start": "npm run lndev && rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "npm run lndev && npm run build:storybook",
     "deploy": "gh-pages -d ./build",
     "storybook": "npm run lndev && start-storybook -p 9009",
-    "build:storybook": "npm run lndev && build-storybook -o ./build/",
-    "build:css": "npm run lndev && npm run scss:compile",
-    "scss:compile": "node-sass ./src/scss/index.scss ./dist/css/style.min.css --output-style compressed --source-map true --include-path ./node_modules --source-comments false",
+    "scss:compile": "webpack --config=config/webpack.css.js && rm dist/css/main.js && rm dist/css/main.js.map",
     "lndev": "node LNDev.js"
   },
   "peerDependencies": {
@@ -63,6 +63,7 @@
     "eslint-plugin-standard": "^3.1.0",
     "flow-bin": "^0.113.0",
     "gh-pages": "^1.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1",
     "react": "^16.12",
@@ -78,7 +79,8 @@
     "rollup-plugin-url": "^1.4.0",
     "sass-loader": "^8.0.0",
     "storybook": "^5.1.11",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "files": [
     "dist"
