@@ -1,0 +1,36 @@
+
+// Bootstrap Grid
+$enable-grid-classes: true;
+$grid-columns: 6;
+$grid-row-columns: 6;
+$container-padding-x: $grid-gutter-width / 2;
+
+$container-max-widths: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
+);
+
+$grid-breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
+);
+
+//Animate scss;
+$use-all: false;
+$use-fade: true;
+
+$use-fadeInUpBig: false;
+$use-fadeInDownBig: false;
+$use-fadeInLeftBig: false;
+$use-fadeInRightBig: false;
+
+$use-fadeOutUpBig: false;
+$use-fadeOutDownBig: false;
+$use-fadeOutLeftBig: false;
+$use-fadeOutRightBig: false;

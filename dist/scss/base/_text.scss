@@ -1,0 +1,62 @@
+// Text helper classes
+
+
+.text-light {
+  font-weight: $font-weight-light;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-regular {
+  font-weight: $font-weight-regular;
+}
+
+.text-lineThrough {
+  text-decoration: line-through;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-nocase {
+  text-transform: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.text {
+  @each $type, $color in $color-map {
+    &-#{$type} {
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+
+// FONT
+$main-font: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$font-weight-regular: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-light: 300 !default;
+
+$breakpoint-xs: 320px !default;
+$breakpoint-sm: 540px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1280px !default;
+
+//Sizes
+$size-xs: 1 !default; //rem
+$size-sm: 1.4 !default;
+$size-md: 1.8 !default;
+$size-lg: 2.6 !default;
+$size-xl: 3 !default;
+
+//Colors
+
+//UX
+$color-initial: #fff !default;
+$color-primary: #9b4dca !default;
+$color-secondary: #606c76 !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+//UI
+$color-default: #272727 !default;
+$color-success: #4caf50 !default;
+$color-info: #03a9f4 !default;
+$color-warning: #f0ad4e !default;
+$color-error: #e73c3c !default;
+
+//GRID
+$grid-gutter-width: 30px !default;
+
+$body-font-family: $main-font;
+$body-font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
+$body-line-height: 1.6;
+$body-letter-spacing: 0.01em;
+$body-font-weight: $font-weight-regular;

@@ -1,0 +1,22 @@
+@import 'base/variables';
+@import 'base/maps';
+
+:export {
+  main-font: $main-font;
+
+  @each $type, $size in $size-map {
+    font-size-#{$type}: $size;
+  }
+
+  @each $type, $color in $color-map {
+    color-#{$type}: $color;
+  }
+
+  @each $type, $weight in $font-weight-map {
+    font-weight-#{$type}: $weight;
+  }
+
+  @each $type, $size in $breakpoint-map {
+    breakpoint-#{$type}: $size;
+  }
+}

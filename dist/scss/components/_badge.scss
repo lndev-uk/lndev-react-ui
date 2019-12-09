@@ -1,0 +1,21 @@
+.badge {
+  display: inline-block;
+  background-color: $color-default;
+  color: $color-initial;
+  padding: 0 1rem;
+  
+  @each $type, $color-map in $variant-color-map {
+    &--#{$type} {
+      background-color: map-get($color-map, 'background-color');
+      color: map-get($color-map, 'color');
+    }
+  }
+
+  @each $type, $size in $size-map {
+    &--#{$type} {
+      font-size: #{$size}rem;
+      line-height: #{$size+($size*.2)}rem;
+      padding: #{$size/2}rem #{$size}rem;
+    }
+  }
+}
