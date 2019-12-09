@@ -1,71 +1,84 @@
 $default-map: (
-  "background-color": $color-default,
-  "color": $color-initial
+  'background-color': $color-default,
+  'color': $color-initial
 );
 $primary-map: (
-  "background-color": $color-primary,
-  "color": $color-initial
+  'background-color': $color-primary,
+  'color': $color-initial
 );
 $secondary-map: (
-  "background-color": $color-secondary,
-  "color": $color-initial
+  'background-color': $color-secondary,
+  'color': $color-initial
 );
 $info-map: (
-  "background-color": $color-info,
-  "color": $color-initial
+  'background-color': $color-info,
+  'color': $color-initial
 );
 
 $success-map: (
-  "background-color": $color-success,
-  "color": $color-initial
+  'background-color': $color-success,
+  'color': $color-initial
 );
 
 $warning-map: (
-  "background-color": $color-warning,
-  "color": $color-default
+  'background-color': $color-warning,
+  'color': $color-default
 );
 
 $error-map: (
-  "background-color": $color-error,
-  "color": $color-initial
+  'background-color': $color-error,
+  'color': $color-initial
 );
 
 $variant-color-map: (
-  "default": $default-map,
-  "primary": $primary-map,
-  "secondary": $secondary-map,
-  "info": $info-map,
-  "success": $success-map,
-  "warning": $warning-map,
-  "error": $error-map
+  'default': $default-map,
+  'primary': $primary-map,
+  'secondary': $secondary-map,
+  'info': $info-map,
+  'success': $success-map,
+  'warning': $warning-map,
+  'error': $error-map
 );
 
 $breakpoint-map: (
-  "xs": $breakpoint-xs,
-  "sm": $breakpoint-sm,
-  "md": $breakpoint-md,
-  "lg": $breakpoint-lg,
-  "xl": $breakpoint-xl
+  'xs': $breakpoint-xs,
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg,
+  'xl': $breakpoint-xl
 );
 
 $size-map: (
-  "xs": $size-xs,
-  "sm": $size-sm,
-  "md": $size-md,
-  "lg": $size-lg,
-  "xl": $size-xl
+  'xs': $size-xs,
+  'sm': $size-sm,
+  'md': $size-md,
+  'lg': $size-lg,
+  'xl': $size-xl
 );
 
 $color-map: (
-  "primary": $color-primary,
-  "secondary": $color-secondary,
-  "tertiary": $color-tertiary,
-  "quaternary": $color-quaternary,
-  "quinary": $color-quinary,
-  "default": $color-default,
-  "success": $color-success,
-  "info": $color-info,
-  "warning": $color-warning,
-  "error": $color-error
+  'primary': $color-primary,
+  'secondary': $color-secondary,
+  'tertiary': $color-tertiary,
+  'quaternary': $color-quaternary,
+  'quinary': $color-quinary,
+  'default': $color-default,
+  'success': $color-success,
+  'info': $color-info,
+  'warning': $color-warning,
+  'error': $color-error
 );
 
+$font-size-map: (
+  'xs': $size-xs,
+  'sm': $size-sm,
+  'md': $size-md,
+  'lg': $size-lg,
+  'xl': $size-xl
+);
+
+$font-weight-map: (
+  'light': $font-weight-light,
+  'regular': $font-weight-regular,
+  'bold': $font-weight-bold
+);
