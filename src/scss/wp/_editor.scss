@@ -1,0 +1,21 @@
+.editor-styles-wrapper *,
+.editor-styles-wrapper > *,
+.editor-writing-flow *,
+.block-editor-writing-flow * {
+  font-family: $body-font-family;
+  color: $color-secondary;
+  font-family: $body-font-family;
+  //font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  letter-spacing: $body-letter-spacing;
+  line-height: $body-line-height;
+}
+.editor-post-title__input {
+  font-family: $body-font-family;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0.2rem;
+  font-size: 4.6rem;
+  line-height: 1.2;
+}

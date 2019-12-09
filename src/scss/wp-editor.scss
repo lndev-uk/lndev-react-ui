@@ -1,4 +1,3 @@
-@import 'base/normalize';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
 @import 'utils/Utility';
@@ -8,7 +7,7 @@
 @import 'base/externals';
 
 @import 'base/defaults';
-@import 'base/document';
+//@import 'base/document';
 @import 'base/typography';
 @import 'base/spacing';
 @import 'base/color';
@@ -19,8 +18,6 @@
 @import 'bootstrap/scss/mixins/grid';
 @import 'bootstrap/scss/grid';
 
-@import 'animate-sass/animate';
-
 @import 'elements/blockquote';
 @import 'elements/code';
 @import 'elements/divider';
@@ -30,6 +27,4 @@
 @import 'elements/list';
 @import 'elements/table';
 
-@import 'components/badge';
-@import 'components/button';
-@import 'components/notification';
+@import 'wp/editor';
