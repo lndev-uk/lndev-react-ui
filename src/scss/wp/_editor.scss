@@ -1,15 +1,12 @@
-.editor-styles-wrapper *,
-.editor-styles-wrapper > *,
-.editor-writing-flow *,
-.block-editor-writing-flow * {
-  font-family: $body-font-family;
+body {
   color: $color-secondary;
   font-family: $body-font-family;
-  //font-size: $body-font-size;
+  font-size: $body-font-size;
   font-weight: $body-font-weight;
   letter-spacing: $body-letter-spacing;
   line-height: $body-line-height;
 }
+
 .editor-post-title__input {
   font-family: $body-font-family;
   font-weight: 300;
