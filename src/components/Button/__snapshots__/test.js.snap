@@ -50,16 +50,6 @@ exports[`Button Sizes matches snapshot size: xs 1`] = `
 </div>
 `;
 
-exports[`Button Variants matches snapshot variant: dark 1`] = `
-<div>
-  <button
-    class="button  button--dark  "
-  >
-    test label
-  </button>
-</div>
-`;
-
 exports[`Button Variants matches snapshot variant: default 1`] = `
 <div>
   <button

@@ -50,16 +50,6 @@ exports[`Badge Sizes matches snapshot size: xs 1`] = `
 </div>
 `;
 
-exports[`Badge Variants matches snapshot variant: dark 1`] = `
-<div>
-  <span
-    class="badge badge--dark "
-  >
-    test label
-  </span>
-</div>
-`;
-
 exports[`Badge Variants matches snapshot variant: default 1`] = `
 <div>
   <span

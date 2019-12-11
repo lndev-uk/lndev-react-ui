@@ -1,18 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification Variant matches snapshot size: dark 1`] = `
-<div>
-  <div
-    class="notification notification--dark "
-  >
-    <p>
-      This is a test 
-      dark
-    </p>
-  </div>
-</div>
-`;
-
 exports[`Notification Variant matches snapshot size: default 1`] = `
 <div>
   <div
