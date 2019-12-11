@@ -1,5 +1,5 @@
 {
-  "name": "lndev-react-ui",
+  "name": "@lnesi/lndev-react-ui",
   "version": "1.2.0",
   "description": "Minimal UI strater kit",
   "author": "Luis Nesi",
@@ -28,6 +28,9 @@
     "webpack:styles-editor": "webpack --config=config/webpack.styles-editor.js",
     "webpack:clean": "rm dist/css/main.js && rm dist/css/main.js.map",
     "lndev": "node LNDev.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "prop-types": "^16.12.0",
