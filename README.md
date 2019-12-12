@@ -9,7 +9,7 @@ Inpired by Twitter Bootstrap, IBM Carbon Design Systems, Google Material UI but 
 ## Install
 
 ```bash
-npm install --save lndev-react-ui
+npm install --save @lnesi/lndev-react-ui
 ```
 
 ## Usage
