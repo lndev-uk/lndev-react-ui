@@ -12,6 +12,10 @@
     color-#{$type}: $color;
   }
 
+  @each $type, $color in $color-system {
+    color-#{$type}: $color;
+  }
+
   @each $type, $weight in $font-weight-map {
     font-weight-#{$type}: $weight;
   }

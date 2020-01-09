@@ -10,6 +10,16 @@ $secondary-map: (
   'background-color': $color-secondary,
   'color': $color-initial
 );
+
+$tertiary-map: (
+  'background-color': $color-tertiary,
+  'color': $color-initial
+);
+
+$quaternary-map: (
+  'background-color': $color-quaternary,
+  'color': $color-default
+);
 $info-map: (
   'background-color': $color-info,
   'color': $color-initial
@@ -34,6 +44,8 @@ $variant-color-map: (
   'default': $default-map,
   'primary': $primary-map,
   'secondary': $secondary-map,
+  'tertiary': $tertiary-map,
+  'quaternary': $quaternary-map,
   'info': $info-map,
   'success': $success-map,
   'warning': $warning-map,
@@ -67,6 +79,16 @@ $color-map: (
   'info': $color-info,
   'warning': $color-warning,
   'error': $color-error
+);
+
+$color-system: (
+  'lngrey': $color-lngrey,
+  'lngreengrey': $color-lngreengrey,
+  'lndarkgrey': $color-lndarkgrey,
+  'lnred': $color-lnred,
+  'lnlightgrey': $color-lnlightgrey,
+  'lnwhite': $color-lnwhite,
+  'lnlblack': $color-lnlblack
 );
 
 $font-size-map: (

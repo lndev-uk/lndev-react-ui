@@ -1,17 +1,18 @@
 code {
-  background: $color-tertiary;
+  background: $color-quinary;
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 1rem;
   white-space: nowrap;
 }
 
 pre {
-  background: $color-tertiary;
+  background: $color-quinary;
   border-left: 0.3rem solid $color-primary;
   overflow-y: hidden;
-
+  padding-left: 1rem;
+  padding-right: 1rem;
   & > code {
     border-radius: 0;
     display: block;

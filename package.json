@@ -90,5 +90,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "styled-components": "^4.4.1"
+  }
 }

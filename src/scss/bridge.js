@@ -6,6 +6,8 @@ export const VariantList = [
   'default',
   'primary',
   'secondary',
+  'tertiary',
+  'quaternary',
   'info',
   'success',
   'warning',
@@ -15,7 +17,9 @@ export const VariantList = [
 export type Variant =
   | 'default'
   | 'primary'
-  | 'secondary'
+  | 'tertiary'
+  | 'tertiary'
+  | 'quaternary'
   | 'info'
   | 'success'
   | 'warning'
@@ -35,7 +39,14 @@ export const ColorList = [
   'success',
   'info',
   'warning',
-  'error'
+  'error',
+  'lngrey',
+  'lngreengrey',
+  'lndarkgrey',
+  'lnred',
+  'lnlightgrey',
+  'lnwhite',
+  'lnlblack'
 ];
 
 export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
