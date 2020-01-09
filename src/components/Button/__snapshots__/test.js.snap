@@ -90,6 +90,16 @@ exports[`Button Variants matches snapshot variant: primary 1`] = `
 </div>
 `;
 
+exports[`Button Variants matches snapshot variant: quaternary 1`] = `
+<div>
+  <button
+    class="button  button--quaternary  "
+  >
+    test label
+  </button>
+</div>
+`;
+
 exports[`Button Variants matches snapshot variant: secondary 1`] = `
 <div>
   <button
@@ -104,6 +114,16 @@ exports[`Button Variants matches snapshot variant: success 1`] = `
 <div>
   <button
     class="button  button--success  "
+  >
+    test label
+  </button>
+</div>
+`;
+
+exports[`Button Variants matches snapshot variant: tertiary 1`] = `
+<div>
+  <button
+    class="button  button--tertiary  "
   >
     test label
   </button>

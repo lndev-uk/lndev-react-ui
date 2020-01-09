@@ -52,6 +52,19 @@ exports[`Notification Variant matches snapshot size: primary 1`] = `
 </div>
 `;
 
+exports[`Notification Variant matches snapshot size: quaternary 1`] = `
+<div>
+  <div
+    class="notification notification--quaternary "
+  >
+    <p>
+      This is a test 
+      quaternary
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Notification Variant matches snapshot size: secondary 1`] = `
 <div>
   <div
@@ -73,6 +86,19 @@ exports[`Notification Variant matches snapshot size: success 1`] = `
     <p>
       This is a test 
       success
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Notification Variant matches snapshot size: tertiary 1`] = `
+<div>
+  <div
+    class="notification notification--tertiary "
+  >
+    <p>
+      This is a test 
+      tertiary
     </p>
   </div>
 </div>

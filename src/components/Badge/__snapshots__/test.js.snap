@@ -90,6 +90,16 @@ exports[`Badge Variants matches snapshot variant: primary 1`] = `
 </div>
 `;
 
+exports[`Badge Variants matches snapshot variant: quaternary 1`] = `
+<div>
+  <span
+    class="badge badge--quaternary "
+  >
+    test label
+  </span>
+</div>
+`;
+
 exports[`Badge Variants matches snapshot variant: secondary 1`] = `
 <div>
   <span
@@ -104,6 +114,16 @@ exports[`Badge Variants matches snapshot variant: success 1`] = `
 <div>
   <span
     class="badge badge--success "
+  >
+    test label
+  </span>
+</div>
+`;
+
+exports[`Badge Variants matches snapshot variant: tertiary 1`] = `
+<div>
+  <span
+    class="badge badge--tertiary "
   >
     test label
   </span>
