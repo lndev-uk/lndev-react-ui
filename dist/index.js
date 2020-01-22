@@ -36,16 +36,16 @@ function styleInject(css, ref) {
 }
 
 var css = "\n";
-var variablesSCSS = { "main-font": "\"Roboto\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif", "font-size-xs": "1", "font-size-sm": "1.4", "font-size-md": "1.8", "font-size-lg": "2.6", "font-size-xl": "3", "color-primary": "#9b4dca", "color-secondary": "#606c76", "color-tertiary": "#f4f5f6", "color-quaternary": "#d1d1d1", "color-quinary": "#e1e1e1", "color-default": "#272727", "color-success": "#4caf50", "color-info": "#03a9f4", "color-warning": "#f0ad4e", "color-error": "#e73c3c", "font-weight-light": "300", "font-weight-regular": "400", "font-weight-bold": "700", "breakpoint-xs": "320px", "breakpoint-sm": "540px", "breakpoint-md": "768px", "breakpoint-lg": "1024px", "breakpoint-xl": "1280px" };
+var variablesSCSS = { "main-font": "\"Quicksand\", sans-serif", "font-size-xs": "1", "font-size-sm": "1.4", "font-size-md": "1.8", "font-size-lg": "2.6", "font-size-xl": "3", "color-primary": "#af0f0f", "color-secondary": "#28252a", "color-tertiary": "#80938c", "color-quaternary": "#ccc6c3", "color-quinary": "#f9f4ef", "color-default": "#272727", "color-success": "#4caf50", "color-info": "#03a9f4", "color-warning": "#f0ad4e", "color-error": "#e73c3c", "color-lngrey": "#ccc6c3", "color-lngreengrey": "#80938c", "color-lndarkgrey": "#28252a", "color-lnred": "#af0f0f", "color-lnlightgrey": "#f9f4ef", "color-lnwhite": "#ffffff", "color-lnlblack": "#000000", "font-weight-light": "300", "font-weight-regular": "400", "font-weight-bold": "700", "breakpoint-xs": "320px", "breakpoint-sm": "540px", "breakpoint-md": "768px", "breakpoint-lg": "1024px", "breakpoint-xl": "1280px" };
 styleInject(css);
 
-var VariantList = ['default', 'primary', 'secondary', 'info', 'success', 'warning', 'error'];
+var VariantList = ['default', 'primary', 'secondary', 'tertiary', 'quaternary', 'info', 'success', 'warning', 'error'];
 
 var SizeList = ['xs', 'sm', 'md', 'lg', 'xl'];
 
 var FontWeightList = ['light', 'regular', 'bold'];
 
-var ColorList = ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'default', 'success', 'info', 'warning', 'error'];
+var ColorList = ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'default', 'success', 'info', 'warning', 'error', 'lngrey', 'lngreengrey', 'lndarkgrey', 'lnred', 'lnlightgrey', 'lnwhite', 'lnlblack'];
 
 var getVariables = function getVariables(name, list) {
   var obj = list.reduce(function (entry, key) {
@@ -237,6 +237,188 @@ Notification.propTypes = {
   children: PropTypes.node.isRequired
 };
 
+function validateEmail(email) {
+  var regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return regEx.test(email);
+}
+
+function validateUrl(value) {
+  var regEx = /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/i;
+  return regEx.test(value);
+}
+
+function validator(rule, value) {
+  var argument = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+  switch (rule) {
+    case 'required':
+      return value !== '';
+    case 'email':
+      return validateEmail(value);
+    case 'url':
+      return validateUrl(value);
+    case 'securePassword':
+      return validateUrl(value);
+    case 'min':
+      return value >= argument;
+    case 'max':
+      return value <= argument;
+    default:
+      return true;
+  }
+}
+
+function getErrorMessage(rule) {
+  var argument = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+  switch (rule) {
+    case 'required':
+      return 'This field is required';
+    case 'email':
+      return 'Must be a valid email';
+    case 'url':
+      return 'Must be a valid url';
+    case 'securePassword':
+      return 'Password sercurity rule not met.';
+    case 'min':
+      return 'Value must be greater than: ' + argument;
+    case 'max':
+      return 'Value must be less than: ' + argument;
+    default:
+      return 'Invalid field value';
+  }
+}
+
+function inputReducer(state, action) {
+  switch (action.type) {
+    case 'TOUCHED':
+      return _extends({}, state, { touched: true });
+    case 'VALID':
+      return _extends({}, state, { valid: true, error: '' });
+    case 'INVALID_ERROR':
+      return _extends({}, state, { valid: false, error: action.payload });
+    case 'CHANGE':
+      return _extends({}, state, action.payload);
+    default:
+      return state;
+  }
+}
+
+function TextInput(props) {
+  var id = props.id,
+      name = props.name,
+      label = props.label,
+      type = props.type,
+      required = props.required,
+      value = props.value,
+      onChange = props.onChange,
+      placeholder = props.placeholder,
+      min = props.min,
+      max = props.max;
+
+  var _useReducer = React.useReducer(inputReducer, {
+    value: value,
+    valid: true,
+    touched: false,
+    error: ''
+  }),
+      _useReducer2 = slicedToArray(_useReducer, 2),
+      state = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  var hasErrorClass = '';
+  if (state.touched && !state.valid) hasErrorClass = 'hasError';
+
+  var validate = function validate(value) {
+    var val = value.trim();
+    if (required && !validator('required', val)) {
+      return dispatch({
+        type: 'INVALID_ERROR',
+        payload: getErrorMessage('required')
+      });
+    }
+    if (type === 'email' && !validator('email', val)) {
+      return dispatch({
+        type: 'INVALID_ERROR',
+        payload: getErrorMessage('email')
+      });
+    }
+
+    if (type === 'url' && !validator('url', val)) {
+      return dispatch({
+        type: 'INVALID_ERROR',
+        payload: getErrorMessage('url')
+      });
+    }
+
+    if (type === 'number' && min !== undefined && !validator('min', val, min)) {
+      return dispatch({
+        type: 'INVALID_ERROR',
+        payload: getErrorMessage('min', min)
+      });
+    }
+
+    if (type === 'number' && max !== undefined && !validator('max', val, max)) {
+      return dispatch({
+        type: 'INVALID_ERROR',
+        payload: getErrorMessage('max', max)
+      });
+    }
+
+    return dispatch({ type: 'VALID' });
+  };
+
+  var onChangeHandler = function onChangeHandler(e) {
+    validate(e.target.value);
+    dispatch({ type: 'CHANGE', payload: { value: e.target.value } });
+    onChange(e);
+  };
+  var onFocusHandler = function onFocusHandler() {
+    return dispatch({ type: 'TOUCHED' });
+  };
+  var onBlurHandler = function onBlurHandler(e) {
+    return validate(e.target.value);
+  };
+
+  return React__default.createElement(
+    'div',
+    { className: 'TextInput ' + hasErrorClass },
+    React__default.createElement(
+      'label',
+      { htmlFor: id },
+      label,
+      ' ',
+      required ? React__default.createElement(
+        'span',
+        null,
+        '*'
+      ) : null
+    ),
+    React__default.createElement('input', {
+      id: id,
+      name: name,
+      type: type,
+      value: state.value,
+      required: required,
+      placeholder: placeholder,
+      min: min,
+      max: max,
+      onFocus: onFocusHandler,
+      onBlur: onBlurHandler,
+      onChange: onChangeHandler,
+      'aria-errormessage': 'error_' + id,
+      'aria-required': required,
+      'aria-invalid': !state.valid
+    }),
+    React__default.createElement(
+      'small',
+      { id: 'error_' + id },
+      state.error ? state.error : '\xA0'
+    ),
+    props.children
+  );
+}
+
 function useAnimation(ref, animationName, callback) {
   var _useState = React.useState(false),
       _useState2 = slicedToArray(_useState, 2),
@@ -284,4 +466,5 @@ exports.Loader = Loader;
 exports.Badge = Badge;
 exports.Button = Button;
 exports.Notification = Notification;
+exports.TextInput = TextInput;
 //# sourceMappingURL=index.js.map

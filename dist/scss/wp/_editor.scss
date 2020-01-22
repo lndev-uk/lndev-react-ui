@@ -1,10 +1,14 @@
 body {
   color: $color-secondary;
   font-family: $body-font-family;
-  font-size: $body-font-size;
+  font-size: 15px;
   font-weight: $body-font-weight;
-  letter-spacing: $body-letter-spacing;
-  line-height: $body-line-height;
+  letter-spacing: 0.01em;
+  line-height: 25px;
+}
+
+.wp-block {
+  max-width: 1080px;
 }
 
 .editor-post-title__input {
@@ -13,6 +17,44 @@ body {
   letter-spacing: -0.1rem;
   margin-bottom: 2rem;
   margin-top: 0.2rem;
-  font-size: 4.6rem;
+  font-size: 44px;
   line-height: 1.2;
+}
+
+.block-library-list {
+  ul,
+  ol {
+    padding-left: 0;
+  }
+}
+
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 27px;
+}
+h4 {
+  font-size: 21px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 21px;
+}
+.post-list__item h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+table {
+  td,
+  th {
+    padding: 5px 10px;
+  }
 }
