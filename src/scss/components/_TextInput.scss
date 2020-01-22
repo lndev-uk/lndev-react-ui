@@ -1,0 +1,14 @@
+.TextInput {
+  margin-bottom: #{$size-xs}rem;
+  &.hasError {
+    input {
+      border: 1px solid $color-error;
+    }
+    small {
+      color: $color-error;
+    }
+    label {
+      color: $color-error;
+    }
+  }
+}
