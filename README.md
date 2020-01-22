@@ -1,6 +1,6 @@
 # LNDev React UI Library Starter Kit
 
-[https://lnesi.github.io/lndev-react-ui](https://lnesi.github.io/lndev-react-ui)
+[https://lndev-uk.github.io/lndev-react-ui/](https://lndev-uk.github.io/lndev-react-ui/)
 
 Inpired by Twitter Bootstrap, IBM Carbon Design Systems, Google Material UI but based on Miligram.io. This library looks to keep to pick the best of parts and conventions from each one of them to create a new hybrid that is focus on simplicty, low footprint and performance.
 
@@ -9,7 +9,7 @@ Inpired by Twitter Bootstrap, IBM Carbon Design Systems, Google Material UI but 
 ## Install
 
 ```bash
-npm install --save @lnesi/lndev-react-ui
+npm install --save @lndev/lndev-react-ui
 ```
 
 ## Usage
@@ -28,4 +28,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [Luis Nesi](https://github.com/Luis Nesi)
+MIT © [LNDev](https://github.com/lndev-uk)
