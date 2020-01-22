@@ -1,6 +1,12 @@
-import '../src/scss/index.scss';
-// import { configure, addParameters } from '@storybook/react';
-// import '../src/scss/index.scss';
+import { addParameters } from '@storybook/react';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 
-// // automatically import all files ending in *.stories.js
-// configure(require.context('../src', true, /story\.js$/), module);
+import '../src/scss/index.scss';
+import './docs.css';
+
+addParameters({
+  docs: {
+    container: DocsContainer,
+    page: DocsPage
+  }
+});
