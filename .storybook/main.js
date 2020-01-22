@@ -1,4 +1,3 @@
-const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 const path = require('path');
 
 module.exports = {
@@ -8,25 +7,28 @@ module.exports = {
     '@storybook/addon-viewport/register',
     '@storybook/addon-docs/register'
   ],
-  stories: ['../src/**/*.story.(js|mdx)', '../src/**/story.(js|mdx)'],
+  stories: ['../src/**/*.story.(js)', '../src/**/story.(js)'],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
     config.module.rules.push({
-      test: /\.(stories|story)\.mdx$/,
+      test: /\.mdx$/,
       use: [
         {
           loader: 'babel-loader',
           // may or may not need this line depending on your app's setup
           options: {
-            plugins: ['@babel/plugin-transform-react-jsx']
+            plugins: [
+              'babel-plugin-react-docgen',
+              'babel-plugin-transform-react-jsx'
+            ]
           }
         },
         {
-          loader: '@mdx-js/loader',
+          loader: 'mdx-loader',
           options: {
-            compilers: [createCompiler({})]
+            //compilers: [createCompiler({})]
           }
         }
       ]

@@ -1,5 +1,5 @@
 //@flow
-import React, { useReducer } from 'react';
+import React, { useReducer, FC } from 'react';
 import { validator, getErrorMessage } from './validator';
 import PropTypes from 'prop-types';
 
@@ -45,7 +45,13 @@ export function inputReducer(
   }
 }
 
-export default function TextInput(props: TextInputProps): React.ReactNode {
+export interface DummyProps {
+  textProp: string;
+}
+
+export const TextInput: FC<DummyProps> = (
+  props: TextInputProps
+): React.ReactNode => {
   const {
     id,
     name,
@@ -141,4 +147,12 @@ export default function TextInput(props: TextInputProps): React.ReactNode {
       {props.children}
     </div>
   );
-}
+};
+
+TextInput.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
+
+export default TextInput;

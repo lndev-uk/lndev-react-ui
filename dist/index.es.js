@@ -297,7 +297,7 @@ function inputReducer(state, action) {
   }
 }
 
-function TextInput(props) {
+var TextInput = function TextInput(props) {
   var id = props.id,
       name = props.name,
       label = props.label,
@@ -410,7 +410,13 @@ function TextInput(props) {
     ),
     props.children
   );
-}
+};
+
+TextInput.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
 
 function useAnimation(ref, animationName, callback) {
   var _useState = useState(false),
