@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.story.(js|mdx)', '../src/**/story.(js|mdx)'],
-  addons: [],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
