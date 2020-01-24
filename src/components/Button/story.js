@@ -1,38 +1,77 @@
 import React from 'react';
 import Button from '.';
 import { VariantList, SizeList } from '../../scss/bridge';
+import docsMDX from './docs.mdx';
 
-export default { title: 'Button' };
+export default {
+  title: 'Components/Button',
+  component: Button,
+  parameters: { docs: { page: docsMDX } }
+};
 
-export const Variants = () => (
-  <div className="container">
-    <h1>Button Variants:</h1>
-    {VariantList.map(variant => {
-      return (
-        <p key={variant}>
-          <Button variant={variant} label={variant} />
-        </p>
-      );
-    })}
-  </div>
-);
+export const Example = () => {
+  return (
+    <div className="container">
+      <p>
+        <Button variant={'info'} label="info" />
+      </p>
+      <p>
+        <Button variant={'success'} label="success" />
+      </p>
+      <p>
+        <Button variant={'warning'} label="warning" />
+      </p>
+      <p>
+        <Button variant={'error'} label="error" />
+      </p>
+      <p>
+        <Button variant={'default'} label="default" />
+      </p>
+    </div>
+  );
+};
+
+export const Variants = () => {
+  return (
+    <div className="container">
+      <p>
+        <Button variant={'primary'} label="primary" />
+      </p>
+      <p>
+        <Button variant={'secondary'} label="secondary" />
+      </p>
+      <p>
+        <Button variant={'tertiary'} label="tertiary" />
+      </p>
+      <p>
+        <Button variant={'quaternary'} label="quaternary" />
+      </p>
+    </div>
+  );
+};
 
 export const Sizes = () => (
   <div className="container">
-    <h1>Button Sizes:</h1>
-    {SizeList.map(size => {
-      return (
-        <p key={size}>
-          <Button size={size} label={size} />
-        </p>
-      );
-    })}
+    <p>
+      <Button size={'xs'} label={'xs'} /> Extra Small
+    </p>
+    <p>
+      <Button size={'sm'} label={'sm'} /> Small
+    </p>
+    <p>
+      <Button size={'md'} label={'md'} /> Meddium
+    </p>
+    <p>
+      <Button size={'lg'} label={'lg'} /> Large
+    </p>
+    <p>
+      <Button size={'xl'} label={'xl'} /> Extra Large
+    </p>
   </div>
 );
 
 export const mobileFull = () => (
   <div className="container">
-    <div>Enable Chrome Dev Tools and simulate mobile/tabelt</div>
     <div>
       <Button mobileFull={true} label="Full Width Mobile" />
     </div>

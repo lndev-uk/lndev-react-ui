@@ -3,13 +3,9 @@ import TextInput from '.';
 import docsMDX from './docs.mdx';
 
 export default {
-  title: 'TextInput',
+  title: 'Components/TextInput',
   component: TextInput,
-  parameters: {
-    docs: {
-      page: docsMDX
-    }
-  }
+  parameters: {}
 };
 
 console.log(TextInput.propTypes);
@@ -28,16 +24,6 @@ export const Number = () => (
     />
   </div>
 );
-
-Number.story = {
-  title: 'NUmberTextInput',
-  component: TextInput,
-  parameters: {
-    docs: {
-      page: docsMDX
-    }
-  }
-};
 
 /**
    Props:

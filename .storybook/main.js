@@ -20,8 +20,8 @@ module.exports = {
           // may or may not need this line depending on your app's setup
           options: {
             plugins: [
-              'babel-plugin-react-docgen',
-              'babel-plugin-transform-react-jsx'
+              'babel-plugin-transform-react-jsx',
+              'babel-plugin-react-docgen'
             ]
           }
         },
@@ -36,7 +36,11 @@ module.exports = {
 
     config.module.rules.push({
       test: /(story)\.js?$/,
-      loader: require.resolve('@storybook/source-loader'),
+      use: [
+        {
+          loader: require.resolve('@storybook/source-loader')
+        }
+      ],
       exclude: [/node_modules/],
       enforce: 'pre'
     });

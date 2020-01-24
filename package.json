@@ -28,7 +28,8 @@
     "webpack:styles": "webpack --config=config/webpack.styles.js",
     "webpack:styles-editor": "webpack --config=config/webpack.styles-editor.js",
     "webpack:clean": "rm dist/css/main.js && rm dist/css/main.js.map",
-    "lndev": "node LNDev.js"
+    "lndev": "node LNDev.js",
+    "react-docgen": "react-docgen"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -45,6 +46,7 @@
     "@storybook/addon-links": "^5.3.8",
     "@storybook/addon-viewport": "^5.3.8",
     "@storybook/addons": "^5.3.8",
+    "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.8",
     "@storybook/theming": "^5.3.8",
     "@svgr/rollup": "^2.4.1",
@@ -79,6 +81,7 @@
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12",
+    "react-docgen": "^5.1.0",
     "react-dom": "^16.12",
     "react-scripts": "^1.1.4",
     "react-test-renderer": "^16.12.0",

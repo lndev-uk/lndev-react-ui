@@ -1,21 +1,24 @@
-import { Story,Preview,Props } from '@storybook/addon-docs/blocks';
+import { Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import TextInput from '.';
 
 # Text Input
 
-
-
 ## Number text Input:
-*Validation:*
+
+_Validation:_
+
 - required
 - number
 - min:0
 - max:10
 
 <Preview>
-  <Story id="textinput--number" />
+  <Story id="components-textinput--number" />
+  <Props of={TextInput} />
 </Preview>
 
 ---
+
 Props:
+
 <Props of={TextInput} />

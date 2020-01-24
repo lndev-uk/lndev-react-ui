@@ -2,7 +2,7 @@ import React from 'react';
 import Loader from '.';
 
 export default {
-  title: 'Loader'
+  title: 'Components/Loader'
 };
 
 export const Bar = () => (

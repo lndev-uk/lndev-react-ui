@@ -1,18 +1,21 @@
 import React from 'react';
-import scss from '../scss/bridge';
+
 export default {
-  title: 'Demo Content'
+  title: 'Examples'
 };
 export const basicHTMLElements = () => {
-  console.log(scss);
   return (
     <div className="container">
       <h1>
-        Lorem ipsum dolor sit amet{' '}
+        Basic HTML Elements Example{' '}
         <small>
           <code>{'<h1>'}</code>
         </small>
       </h1>
+      <p>
+        Below you can find most of the basic semantic html elements and their
+        default styles on the design system
+      </p>
       <p>
         <code>{'<p>'}</code>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec

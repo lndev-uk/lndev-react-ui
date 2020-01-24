@@ -1,0 +1,49 @@
+import { Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Notification from './';
+
+# Notification
+
+Notifications are available for any length of text, as well as an optional dismiss button.
+The example below are using the UI system variants.
+
+<Preview>
+  <Story id="components-notification--example" />
+</Preview>
+<Props of={Notification} />
+
+## UX Variants
+
+Notications can also be use in UX variants
+
+<Preview>
+  <Story id="components-notification--variants" />
+</Preview>
+
+## Dismissal
+
+You Can also enable dismissal manual an automatic dismissal functionality.
+
+<Preview>
+  <Story id="components-notification--dismissal" />
+</Preview>
+
+## Stateless
+
+For more advance implementation you can bypass the embeded state and control
+the visibility from outside with the onClose callback
+
+<Preview>
+  <Story id="components-notification--stateless" />
+</Preview>
+
+## Animated
+
+In the example above by using `dismissal=true and onClose and stateless=true` you can make the notificaiton persistant.
+This means that you only need to use 1 notification per tree. Has long the notification is present using onClose
+callback you can reset the notification by using an external state to which ever content and variant required/
+
+You can also use Animations. For more info on animations please read.
+
+<Preview>
+  <Story id="components-notification--animated" />
+</Preview>

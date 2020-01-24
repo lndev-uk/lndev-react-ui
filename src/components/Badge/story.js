@@ -1,43 +1,15 @@
-import React from "react";
-import Badge from ".";
-import { VariantList, SizeList } from "../../scss/bridge";
+import React from 'react';
+import Badge from '.';
+import docsMDX from './docs.mdx';
 
-export default { title: "Badge" };
-
-export const Variants = () => (
-  <div className="container">
-    <h1>Badge Variant:</h1>
-    {VariantList.map(variant => {
-      return (
-        <p key={variant}>
-          <Badge variant={variant} label={variant} />
-        </p>
-      );
-    })}
-  </div>
-);
-
-export const Sizes = () => (
-  <div className="container">
-    <h1>Badge Sizes:</h1>
-    {SizeList.map(size => {
-      return (
-        <p key={size}>
-          <Badge size={size} label={size} />
-        </p>
-      );
-    })}
-  </div>
-);
+export default {
+  title: 'Components/Badge',
+  component: Badge,
+  parameters: { docs: { page: docsMDX } }
+};
 
 export const Example = () => (
   <div className="container">
-    <h1>Example:</h1>
-    <p>
-      If Size is not specified the Badges scale to match the size of the
-      immediate parent element by using relative font sizing and em units.
-    </p>
-    <hr />
     <h1>
       Example heading <Badge variant="primary" label="Primary" />
     </h1>
@@ -45,7 +17,7 @@ export const Example = () => (
       Example heading <Badge variant="secondary" label="Secondary" />
     </h2>
     <h3>
-      Example heading <Badge variant="dark" label="Dark" />
+      Example heading <Badge variant="default" label="default" />
     </h3>
     <h4>
       Example heading <Badge variant="warning" label="Warning" />
@@ -56,5 +28,59 @@ export const Example = () => (
     <h6>
       Example heading <Badge variant="error" label="Error" />
     </h6>
+  </div>
+);
+
+export const Variants = () => (
+  <div className="container">
+    <h3>UX</h3>
+    <p>
+      <Badge variant={'primary'} label={'primary'} />
+    </p>
+    <p>
+      <Badge variant={'secondary'} label={'secondary'} />
+    </p>
+    <p>
+      <Badge variant={'tertiary'} label={'tertiary'} />
+    </p>
+    <p>
+      <Badge variant={'quaternary'} label={'quaternary'} />
+    </p>
+    <h3>UI</h3>
+    <p>
+      <Badge variant={'default'} label={'default'} />
+    </p>
+    <p>
+      <Badge variant={'info'} label={'info'} />
+    </p>
+    <p>
+      <Badge variant={'success'} label={'success'} />
+    </p>
+    <p>
+      <Badge variant={'warning'} label={'warning'} />
+    </p>
+    <p>
+      <Badge variant={'error'} label={'error'} />
+    </p>
+  </div>
+);
+
+export const Sizes = () => (
+  <div className="container">
+    <p>
+      <Badge size={'xs'} label={'xs'} /> Extra Small
+    </p>
+    <p>
+      <Badge size={'sm'} label={'sm'} /> Small
+    </p>
+    <p>
+      <Badge size={'md'} label={'md'} /> Meddium
+    </p>
+    <p>
+      <Badge size={'lg'} label={'lg'} /> Large
+    </p>
+    <p>
+      <Badge size={'xl'} label={'xl'} /> Extra Large
+    </p>
   </div>
 );
