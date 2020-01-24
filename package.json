@@ -1,14 +1,14 @@
 {
-  "name": "@lndev/lndev-react-ui",
+  "name": "@lndev-uk/lndev-react-ui",
   "version": "2.1.0",
   "description": "Minimal UI strater kit",
   "author": "Luis Nesi",
   "license": "MIT",
-  "repository": "git@github.com:lndev/lndev-react-ui.git",
+  "repository": "git@github.com:lndev-uk/lndev-react-ui.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "homepage": "https://lndev.github.io/lndev-react-ui",
+  "homepage": "https://lndev-uk.github.io/lndev-react-ui",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
