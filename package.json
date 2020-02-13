@@ -78,7 +78,7 @@
     "gh-pages": "^1.2.0",
     "mdx-loader": "^3.0.2",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12",
     "react-docgen": "^5.1.0",
